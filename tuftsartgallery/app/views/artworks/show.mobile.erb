@@ -1,0 +1,51 @@
+<div data-role="page" id="showart">
+  
+  <div data-role="header" data-theme="b" data-position="inline">
+      <h1>Artwork</h1>
+      <a href="#home" data-icon="home" class="ui-btn-right" data-iconpos="notext">Home</a>
+  </div><!-- /header -->
+  
+  <div data-role="content">
+    <p>[Image Placeholder]</p>
+    <p>
+      <b>Object:</b>
+      <%= @artwork.object %>
+    </p>
+
+    <p>
+      <b>Creator:</b>
+      <%= @artwork.creator %>
+    </p>
+
+    <p>
+      <b>Title:</b>
+      <%= @artwork.title %>
+    </p>
+
+    <p>
+      <b>Description:</b>
+      <%= @artwork.description %>
+    </p>
+
+    <p>
+      <b>Location:</b>
+      <%= @artwork.location %>
+    </p>
+
+    <p>
+      <b>Recfrom:</b>
+      <%= @artwork.recfrom %>
+    </p>
+
+    <p>
+      <b>Date:</b>
+      <%= @artwork.date %>
+    </p>
+
+    <p>
+      <b>Filename:</b>
+      <%= @artwork.filename %>
+    </p>   
+  <div><!-- /content -->
+  
+</div><!-- /page -->
