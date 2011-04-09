@@ -1,0 +1,40 @@
+1302332689
+Application	/home/ubuntu/comp120s2011/tuftsartgallery/config/application.rb	  class Application 
+ApplicationController	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	/home/ubuntu/comp120s2011/tuftsartgallery/app/helpers/application_helper.rb	module ApplicationHelper
+Artgallery	/home/ubuntu/comp120s2011/tuftsartgallery/config/application.rb	module Artgallery
+Artwork	/home/ubuntu/comp120s2011/tuftsartgallery/app/models/artwork.rb	class Artwork 
+ArtworkTest	/home/ubuntu/comp120s2011/tuftsartgallery/test/unit/artwork_test.rb	class ArtworkTest 
+ArtworksController	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	class ArtworksController 
+ArtworksControllerTest	/home/ubuntu/comp120s2011/tuftsartgallery/test/functional/artworks_controller_test.rb	class ArtworksControllerTest 
+ArtworksHelper	/home/ubuntu/comp120s2011/tuftsartgallery/app/helpers/artworks_helper.rb	module ArtworksHelper
+ArtworksHelperTest	/home/ubuntu/comp120s2011/tuftsartgallery/test/unit/helpers/artworks_helper_test.rb	class ArtworksHelperTest 
+BrowsingTest	/home/ubuntu/comp120s2011/tuftsartgallery/test/performance/browsing_test.rb	class BrowsingTest 
+CSRFProtection	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function CSRFProtection(xhr)
+CreateArtworks	/home/ubuntu/comp120s2011/tuftsartgallery/db/migrate/20110225001412_create_artworks.rb	class CreateArtworks 
+HomeController	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/home_controller.rb	class HomeController 
+HomeControllerTest	/home/ubuntu/comp120s2011/tuftsartgallery/test/functional/home_controller_test.rb	class HomeControllerTest 
+HomeHelper	/home/ubuntu/comp120s2011/tuftsartgallery/app/helpers/home_helper.rb	module HomeHelper
+HomeHelperTest	/home/ubuntu/comp120s2011/tuftsartgallery/test/unit/helpers/home_helper_test.rb	class HomeHelperTest 
+TestCase	/home/ubuntu/comp120s2011/tuftsartgallery/test/test_helper.rb	class ActiveSupport::TestCase
+allowAction	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function allowAction(element)
+blankInputs	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function blankInputs(form, specifiedSelector)
+create	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def create
+destroy	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def destroy
+disableFormElements	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function disableFormElements(form)
+down	/home/ubuntu/comp120s2011/tuftsartgallery/db/migrate/20110225001412_create_artworks.rb	  def self.down
+edit	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def edit
+enableFormElements	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function enableFormElements(form)
+fire	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function fire(obj, name, data)
+handleMethod	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function handleMethod(link)
+handleRemote	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function handleRemote(element)
+index	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def index
+index	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/home_controller.rb	  def index
+mobile_device?	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/application_controller.rb	  def mobile_device?
+new	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def new
+nonBlankInputs	/home/ubuntu/comp120s2011/tuftsartgallery/public/javascripts/rails.js	function nonBlankInputs(form, specifiedSelector)
+prepare_for_mobile	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/application_controller.rb	  def prepare_for_mobile
+show	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def show
+test_homepage	/home/ubuntu/comp120s2011/tuftsartgallery/test/performance/browsing_test.rb	  def test_homepage
+up	/home/ubuntu/comp120s2011/tuftsartgallery/db/migrate/20110225001412_create_artworks.rb	  def self.up
+update	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def update

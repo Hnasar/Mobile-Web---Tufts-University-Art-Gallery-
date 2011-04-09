@@ -1,0 +1,24 @@
+<div data-role="page" id="artworks">
+  
+  <div data-role="header" data-theme="b" data-position="inline">
+      <h1>Artworks</h1>
+      <a href="#home" data-icon="home" class="ui-btn-right" data-iconpos="notext">Home</a>
+  </div><!-- /header -->
+  
+  <div data-role="content">
+    <ul data-role="listview">
+      <li>Artist</li>
+      <li>Type</li>
+      <li>Location</li>
+      <li>All
+        <ul data-role="listview" data-theme"b" data-filter="true">
+          <% @artworks.each do |artwork| %>
+            <li><%= artwork.title %></li>
+          <% end %>
+        </ul>
+      </li>      
+    </ul>  
+  <div><!-- /content -->
+  
+</div><!-- /page -->
+
