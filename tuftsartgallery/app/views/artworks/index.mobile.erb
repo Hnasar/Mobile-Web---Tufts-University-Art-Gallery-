@@ -13,7 +13,7 @@
       <li>All
         <ul data-role="listview" data-theme"b" data-filter="true">
           <% @artworks.each do |artwork| %>
-            <li><%= artwork.title %></li>
+            <li><%= link_to artwork.title, artwork %></li>
           <% end %>
         </ul>
       </li>      

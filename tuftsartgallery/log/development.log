@@ -2171,3 +2171,233 @@ Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:04:56 -0400 2011
   [1m[35mArtwork Load (1.0ms)[0m  SELECT `artworks`.* FROM `artworks`
 Rendered artworks/index.mobile.erb within layouts/application (25.7ms)
 Completed 200 OK in 65ms (Views: 32.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 09 03:10:07 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (3.5ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:10:10 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (7.8ms)[0m  [1mSELECT `artworks`.* FROM `artworks`[0m
+Rendered artworks/index.mobile.erb within layouts/application (602.9ms)
+Completed 200 OK in 773ms (Views: 612.1ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at Sat Apr 09 03:10:17 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (75.6ms)[0m  SHOW TABLES
+  [1m[36mArtwork Load (226.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1 LIMIT 1[0m
+Completed   in 382ms
+
+ActionView::MissingTemplate (Missing template artworks/show with {:locale=>[:en, :en], :handlers=>[:rjs, :rhtml, :rxml, :builder, :erb], :formats=>[:mobile]} in view paths "/home/ubuntu/comp120s2011/tuftsartgallery/app/views"):
+  app/controllers/artworks_controller.rb:18:in `show'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/artworks/2" for 127.0.0.1 at Sat Apr 09 03:10:19 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArtwork Load (6.6ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 2 LIMIT 1
+Completed   in 44ms
+
+ActionView::MissingTemplate (Missing template artworks/show with {:locale=>[:en, :en], :handlers=>[:rjs, :rhtml, :rxml, :builder, :erb], :formats=>[:mobile]} in view paths "/home/ubuntu/comp120s2011/tuftsartgallery/app/views"):
+  app/controllers/artworks_controller.rb:18:in `show'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (8.9ms)
+
+
+Started GET "/artworks/4" for 127.0.0.1 at Sat Apr 09 03:10:21 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtwork Load (0.5ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 4 LIMIT 1[0m
+Completed   in 73ms
+
+ActionView::MissingTemplate (Missing template artworks/show with {:locale=>[:en, :en], :handlers=>[:rjs, :rhtml, :rxml, :builder, :erb], :formats=>[:mobile]} in view paths "/home/ubuntu/comp120s2011/tuftsartgallery/app/views"):
+  app/controllers/artworks_controller.rb:18:in `show'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 09 03:11:43 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (20.7ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:11:44 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[35mArtwork Load (1.2ms)[0m  SELECT `artworks`.* FROM `artworks`
+Rendered artworks/index.mobile.erb within layouts/application (554.9ms)
+Completed 200 OK in 602ms (Views: 563.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at Sat Apr 09 03:11:50 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 09 03:12:58 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?mobile=0" for 127.0.0.1 at Sat Apr 09 03:13:01 -0400 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"0"}
+Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:13:03 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[35mArtwork Load (0.9ms)[0m  SELECT `artworks`.* FROM `artworks`
+Rendered artworks/index.html.erb within layouts/application (1439.9ms)
+Completed 200 OK in 1496ms (Views: 1459.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at Sat Apr 09 03:13:08 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1 LIMIT 1[0m
+Rendered artworks/show.html.erb within layouts/application (139.8ms)
+Completed 200 OK in 159ms (Views: 147.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 09 03:14:47 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index?mobile=1" for 127.0.0.1 at Sat Apr 09 03:14:49 -0400 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"1"}
+Rendered home/index.mobile.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:14:50 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[35mArtwork Load (1.0ms)[0m  SELECT `artworks`.* FROM `artworks`
+Rendered artworks/index.mobile.erb within layouts/application (577.9ms)
+Completed 200 OK in 629ms (Views: 587.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/artworks/2" for 127.0.0.1 at Sat Apr 09 03:14:56 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 2 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (6.8ms)
+Completed 200 OK in 37ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 09 03:17:08 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:17:10 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[35mArtwork Load (1.4ms)[0m  SELECT `artworks`.* FROM `artworks`
+Rendered artworks/index.mobile.erb within layouts/application (502.6ms)
+Completed 200 OK in 543ms (Views: 511.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/artworks/2" for 127.0.0.1 at Sat Apr 09 03:17:15 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 2 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (33.0ms)
+Completed 200 OK in 79ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 09 03:18:38 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:18:40 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[35mArtwork Load (1.7ms)[0m  SELECT `artworks`.* FROM `artworks`
+Rendered artworks/index.mobile.erb within layouts/application (641.4ms)
+Completed 200 OK in 683ms (Views: 648.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/artworks/2" for 127.0.0.1 at Sat Apr 09 03:18:48 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 2 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (29.1ms)
+Completed 200 OK in 67ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artworks/9" for 127.0.0.1 at Sat Apr 09 03:18:58 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArtwork Load (55.8ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 9 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (26.8ms)
+Completed 200 OK in 118ms (Views: 43.2ms | ActiveRecord: 55.8ms)
+
+
+Started GET "/artworks/13" for 127.0.0.1 at Sat Apr 09 03:19:03 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArtwork Load (0.5ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 13 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (37.6ms)
+Completed 200 OK in 68ms (Views: 48.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artworks/120" for 127.0.0.1 at Sat Apr 09 03:19:26 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"120"}
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 120 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (32.1ms)
+Completed 200 OK in 65ms (Views: 40.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at Sat Apr 09 03:19:49 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (27.0ms)
+Completed 200 OK in 63ms (Views: 38.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 09 03:20:48 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Sat Apr 09 03:21:03 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[35mArtwork Load (42.9ms)[0m  SELECT `artworks`.* FROM `artworks`
+Rendered artworks/index.mobile.erb within layouts/application (593.1ms)
+Completed 200 OK in 720ms (Views: 604.4ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at Sat Apr 09 03:21:28 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (26.3ms)
+Completed 200 OK in 64ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artworks/10" for 127.0.0.1 at Sat Apr 09 03:21:58 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mArtwork Load (53.1ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 10 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (205.5ms)
+Completed 200 OK in 393ms (Views: 212.1ms | ActiveRecord: 53.1ms)
