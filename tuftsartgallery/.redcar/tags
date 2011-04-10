@@ -1,4 +1,4 @@
-1302334851
+1302406332
 Application	/home/ubuntu/comp120s2011/tuftsartgallery/config/application.rb	  class Application 
 ApplicationController	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/ubuntu/comp120s2011/tuftsartgallery/app/helpers/application_helper.rb	module ApplicationHelper
