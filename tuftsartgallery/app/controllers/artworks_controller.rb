@@ -2,11 +2,23 @@ class ArtworksController < ApplicationController
   # GET /artworks
   # GET /artworks.xml
   def index
-    @artworks = Artwork.all
+    @artworks = Artwork.all(:order => 'title ASC')
+    @artists = Artwork.select("DISTINCT(creator)").order("creator ASC")
+    @types = Artwork.select("DISTINCT(object)").order("object ASC")
+    @locations = Artwork.select("DISTINCT(location)").order("location ASC")
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @artworks }
+    end
+  end
+  
+  def view_cat
+    @current_cat = "Browsing: " + params[:value]
+    @artworks_by_cat = Artwork.where(params[:category] => params[:value]).all(:order => 'title ASC')
+    
+    respond_to do |format|
+      format.html # view_cat.html.erb
     end
   end
 

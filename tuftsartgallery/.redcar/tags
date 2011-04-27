@@ -1,4 +1,4 @@
-1302406332
+1303883794
 Application	/home/ubuntu/comp120s2011/tuftsartgallery/config/application.rb	  class Application 
 ApplicationController	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/ubuntu/comp120s2011/tuftsartgallery/app/helpers/application_helper.rb	module ApplicationHelper
@@ -38,3 +38,4 @@ show	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controll
 test_homepage	/home/ubuntu/comp120s2011/tuftsartgallery/test/performance/browsing_test.rb	  def test_homepage
 up	/home/ubuntu/comp120s2011/tuftsartgallery/db/migrate/20110225001412_create_artworks.rb	  def self.up
 update	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def update
+view_cat	/home/ubuntu/comp120s2011/tuftsartgallery/app/controllers/artworks_controller.rb	  def view_cat
