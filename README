@@ -1,4 +1,5 @@
 finally pushed my work to Hashem's repo.
+heroku URL = jumboartgallery.heroku.com
 
 added some new features:
 - we now can browse the gallery by categories
@@ -6,6 +7,5 @@ added some new features:
 
 known issues:
 - search performance
-- not all images are working due to the file names. Some of the filenames have spaces, or other unnaceptable characters.
-	when we build the URL to fetch the image, the characters are replaced with %XY
+- not all images are working due to the file names. Some of the filenames have spaces, or other unnaceptable characters. when we build the URL to fetch the image, the characters are replaced with %XY
 - currently anything that ends with a period (artist name, location, etc) is causing errors when clicked
