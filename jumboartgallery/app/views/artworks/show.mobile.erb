@@ -1,13 +1,6 @@
-<%
-require 'aws/s3'
 
-  AWS::S3::Base.establish_connection!(
-    :access_key_id     => 'AKIAIWNUCQ3RBDHV6BYA',
-    :secret_access_key => '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'
-  ) 
-  @image_url = AWS::S3::S3Object.url_for("#{@artwork.filename}.jpg",'Art_Images')
-%>
-
+<% @image_url = "http://s3.amazonaws.com/Art_Images/#{@artwork.filename}" %>
+ 
 
 <div data-role="page" id="showart">
   

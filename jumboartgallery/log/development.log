@@ -10755,3 +10755,721 @@ Started GET "/artworks/view_cat/category=location&value=Medford,%20Eaton%20Hall,
   [1m[35mArtwork Load (11.3ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`location` = 'Medford, Eaton Hall, 5 The Green' ORDER BY title ASC
 Rendered artworks/view_cat.mobile.erb within layouts/application (71.4ms)
 Completed 200 OK in 155ms (Views: 93.6ms | ActiveRecord: 11.3ms)
+  [1m[36mSQL (70.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (40.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mAREL (249.0ms)[0m  DELETE FROM `artworks`
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM `artworks`
+  [1m[36mSQL (19.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (6.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mAREL (30.5ms)[0m  DELETE FROM `artworks`
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  describe `artworks`
+  [1m[36mAREL (1.1ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Kitchen Wall, Alabama, Farmstead, 1936', '2011-05-05 03:42:37', '1979.1.3.8.jpg', 'Evans, Walker Kitchen Wall, Alabama, Farmstead, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1936', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:37', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (60.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Portrait of James Agee, 1937', '2011-05-05 03:42:37', '1979.1.3.9.jpg', 'Evans, Walker Portrait of James Agee, 1937 Photography, black and white silver print 1937', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:37', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (14.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Doorway, 204 West 13th Street, New York City, around 1931', '2011-05-05 03:42:37', '1979.1.3.10.jpg', 'Evans, Walker Doorway, 204 West 13th Street, New York City, around 1931 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1931', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:37', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (24.9ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Lunchroom Buddies, New York City, 1931', '2011-05-05 03:42:37', '1979.1.3.11.jpg', 'Evans, Walker Lunchroom Buddies, New York City, 1931 Photography, black and white silver prints 1931', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:37', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')
+  [1m[36mSQL (15.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Stamped Tin Relic, New York, 1930', '2011-05-05 03:42:37', '1979.1.3.12.jpg', 'Evans, Walker Stamped Tin Relic, New York, 1930 Photography, black and white silver print on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1931', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:37', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (10.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Tin False Front Building, Moundville, Alabama, 1936', '2011-05-05 03:42:37', '1979.1.3.13.jpg', 'Evans, Walker Tin False Front Building, Moundville, Alabama, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1936', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:37', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')
+  [1m[36mSQL (10.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Ruin of Tabby (Shell) Construction, St. Mary’s, Georgia, 1936', '2011-05-05 03:42:38', '1979.1.3.14.jpg', 'Evans, Walker Ruin of Tabby (Shell) Construction, St. Mary’s, Georgia, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1936', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Boston, Medical School, 75 Kneeland St., 9th Floor')[0m
+  [1m[35mSQL (46.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Dock Workers, Havana, 1932', '2011-05-05 03:42:38', '1979.1.3.15.jpg', 'Evans, Walker Dock Workers, Havana, 1932 Photography, black and white silver print on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1932', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (78.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Warhol, Andy', 'Kimiko Powers', '2011-05-05 03:42:38', '1980.5.jpg', 'Warhol, Andy Kimiko Powers Graphic Arts, color silk screen on canvas 1972', 'Gift of Mr. & Mrs. David B. Slater', '2011-05-05 03:42:38', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (37.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Parabola Optica', '2011-05-05 03:42:38', '1980.7.1.1.jpg', 'Bravo, Manuel Alvarez Parabola Optica Photography 1931', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (36.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'El Sistema Nervioso del Gran Simpatico (greater sympathetic nervous system)', '2011-05-05 03:42:38', '1980.7.1.2.jpg', 'Bravo, Manuel Alvarez El Sistema Nervioso del Gran Simpatico (greater sympathetic nervous system) Photography 1929', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (36.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'La Buena Fama Durmiendo (Good Reputation Sleeping)', '2011-05-05 03:42:38', '1980.7.1.3.jpg', 'Bravo, Manuel Alvarez La Buena Fama Durmiendo (Good Reputation Sleeping) Photography 1938', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'El Eclipse (Sabanas)', '2011-05-05 03:42:38', '1980.7.1.4.jpg', 'Bravo, Manuel Alvarez El Eclipse (Sabanas) Photography 1933', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (8.8ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'El Ensuena (The Daydream)', '2011-05-05 03:42:38', '1980.7.1.5.jpg', 'Bravo, Manuel Alvarez El Ensuena (The Daydream) Photography 1931', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Boston, Medical School, 75 Kneeland St., 9th Floor')
+  [1m[36mSQL (9.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Un Poco Alegre y Graciosa (Somewhat Gay and Graceful)', '2011-05-05 03:42:38', '1980.7.1.6.jpg', 'Bravo, Manuel Alvarez Un Poco Alegre y Graciosa (Somewhat Gay and Graceful) Photography 1942', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Boston, Medical School, 75 Kneeland St., 9th Floor')[0m
+  [1m[35mSQL (29.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Sed Publica (Public Thirst)', '2011-05-05 03:42:38', '1980.7.1.7.jpg', 'Manuel Alvarez Bravo Sed Publica (Public Thirst) Silver gelatin print 1934', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Boston, Medical School, 75 Kneeland St., 9th Floor')
+  [1m[36mSQL (25.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'La Quema Tres (Kiln Number Three)', '2011-05-05 03:42:38', '1980.7.1.8.jpg', 'Bravo, Manuel Alvarez La Quema Tres (Kiln Number Three) Photography 1957', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (12.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Saratoga Springs, New York, 1931', '2011-05-05 03:42:38', '1980.7.3.1.jpg', 'Evans, Walker Saratoga Springs, New York, 1931 Photography, black and white silver print on Kodak Polycontrast Rapid paper; photos mounted, within plate mark, on hand-made, all-cotton, 300 lb Fabriano classico paper 1931', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Ballou Hall, 1 The Green, 3rd Fl')
+  [1m[36mSQL (10.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Walker Evans: Selected Photographs', '2011-05-05 03:42:38', '1980.7.3.1-7.jpg', 'Evans, Walker Walker Evans: Selected Photographs Photography, portfolio of 15; black and white silver prints; printed on Kodak Polycontrast Rapid paper 1930s', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (31.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Maine Pump, 1933', '2011-05-05 03:42:38', '1980.7.3.2.jpg', 'Evans, Walker Maine Pump, 1933 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1933', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (25.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (15.6ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Breakfast Room at Belle Grove Plantation, White Chapel, Louisiana, 1935', '2011-05-05 03:42:38', '1980.7.3.3.jpg', 'Evans, Walker Breakfast Room at Belle Grove Plantation, White Chapel, Louisiana, 1935 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1935', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Ballou Hall, 1 The Green, 3rd Fl')[0m
+  [1m[35mSQL (7.2ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Minstrel Poster, Alabama, 1936', '2011-05-05 03:42:38', '1980.7.3.4.jpg', 'Evans, Walker Minstrel Poster, Alabama, 1936 Photography, black and white silver prints 1936', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (8.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Shoe Shine Sign in Southern Town', '2011-05-05 03:42:38', '1980.7.3.5.jpg', 'Evans, Walker Shoe Shine Sign in Southern Town Photography, black and white silver print 1936', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Packard Hall, 4 The Green')[0m
+  [1m[35mSQL (35.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Main Street, Ossining, New York, 1932', '2011-05-05 03:42:38', '1980.7.3.6.jpg', 'Evans, Walker Main Street, Ossining, New York, 1932 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1932', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (8.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Evans, Walker', 'Penny Picture Display, Savannah, 1936', '2011-05-05 03:42:38', '1980.7.3.7.jpg', 'Evans, Walker Penny Picture Display, Savannah, 1936 Photography, black and white silver prints on Kodak Polycontrast Rapid paper 1936', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (7.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Friedlander, Lee', 'Plane over Bull - Kansasa City, Missouri, 1965', '2011-05-05 03:42:38', '1980.7.4.5.jpg', 'Friedlander, Lee Plane over Bull - Kansasa City, Missouri, 1965 Photography,black and white selenium toned prints; printed on Dupont Veralure (VLTW); mounted on 615 GSM Imperial 300 lb. hand made paper 1965', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (10.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Fink, Larry', 'Parsons’ School of Design, Costume Party, 1972', '2011-05-05 03:42:38', '1981.1.13.jpg', 'Fink, Larry Parsons’ School of Design, Costume Party, 1972 Photography, portfolio of 15 black and white printed on Portriga Rapid Agfa paper; overmatted with 4-ply 100% rag archival board 1972', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (49.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Fink, Larry', 'Lovers in a Doorway - Houston, Tx. 1959', '2011-05-05 03:42:38', '1981.1.15.jpg', 'Fink, Larry Lovers in a Doorway - Houston, Tx. 1959 Photography, portfolio of 15 black and white printed on Portriga Rapid Agfa paper; overmatted with 4-ply 100% rag archival board 1959', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Albers, Josef', 'Formulation: Articulation', '2011-05-05 03:42:38', '1981.4.5a&b.jpg', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Mr. A. Charles Miller', '2011-05-05 03:42:38', NULL, 'Print', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (7.2ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Albers, Josef', 'Formulation: Articulation', '2011-05-05 03:42:38', '1981.4.42a&b.jpg', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Mr. A. Charles Miller', '2011-05-05 03:42:38', NULL, 'Print', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (8.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Albers, Josef', 'Formulation: Articulation', '2011-05-05 03:42:38', '1981.4.47a&b.jpg', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Mr. A. Charles Miller', '2011-05-05 03:42:38', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (19.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Albers, Josef', 'Formulation: Articulation', '2011-05-05 03:42:38', '1981.4.62a&b.jpg', 'Albers, Josef Formulation: Articulation Graphic Arts, silkscreen on paper 1972', 'Mr. A. Charles Miller', '2011-05-05 03:42:38', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Mulhaupt, Frederick John', 'Boats on the Seine', '2011-05-05 03:42:38', '1982.1.jpg', 'Frederick John Mulhaupt Boats on the Seine oil on wood panel 1908', 'Gift of Mr. and Mrs. Richard P. Lasser', '2011-05-05 03:42:38', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (12.5ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Sato, Masaaki', 'Subway No. 24', '2011-05-05 03:42:38', '1982.2.1.jpg', 'Sato, Masaaki Subway No. 24 Graphic Arts, silkscreen 1978', NULL, '2011-05-05 03:42:38', NULL, 'Print', 'Medford, Dowling Hall, 419 Boston Ave.')
+  [1m[36mSQL (8.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Greek Lekythos', '2011-05-05 03:42:38', '1982.5.1.jpg', 'Unknown Greek Lekythos Sculpture, Pentelic marble probably c. 2nd quarter of 4th c. B.C.', 'Ella Brummer', '2011-05-05 03:42:38', NULL, 'Jug (Lekythos)', 'Medford, Tisch Library, 35 Professors Row')[0m
+  [1m[35mSQL (28.0ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Lyon, Danny', 'Route 12 Wisconsin 1963', '2011-05-05 03:42:38', '1982.6.2.4.jpg', 'Danny Lyon Route 12 Wisconsin 1963 Silver gelatin print pub. 1979', 'Dr. Daniel Schuman', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (9.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Lyon, Danny', 'Sparky and Cowboy, Schereville, Indiana, 1965-66', '2011-05-05 03:42:38', '1982.6.2.9.jpg', 'Danny Lyon Sparky and Cowboy, Schereville, Indiana, 1965-66 Photography, black and white silver prints pub. 1979', 'Dr. Daniel Schuman', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (9.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Boubat, Edouard', 'Petite Fille aux Feuilles Mortes, Paris', '2011-05-05 03:42:38', '1982.7.1.jpg', 'Boubat, Edouard Petite Fille aux Feuilles Mortes, Paris Photography, black and white silver print 1947', 'Mr. Arnold Goldbaum and Mr. Marc Green', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Boubat, Edouard', 'Lella, Bretagne, 1948', '2011-05-05 03:42:38', '1982.7.8.jpg', 'Boubat, Edouard Lella, Bretagne, 1948 Photography, black and white silver print 1948', 'Gift of Mr. Arnold Goldbaum', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Tisch Library, 35 Professors Row')[0m
+  [1m[35mSQL (28.9ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Tramps Puesta (Set Trap)', '2011-05-05 03:42:38', '1982.8.1.2.jpg', 'Bravo, Manuel Alvarez Trampa Puesta (Set Trap) Photography 1930’s', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:38', NULL, 'Print, Photographic', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')
+  [1m[36mSQL (11.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Los Agachados (The Crouched Ones)', '2011-05-05 03:42:39', '1982.8.1.3.jpg', 'Bravo, Manuel Alvarez Los Agachados (The Crouched Ones) Silver gelatin print 1934', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (7.4ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Barda de Panteon (Cemetary Wall)', '2011-05-05 03:42:39', '1982.8.1.4.jpg', 'Manuel Alvarez Bravo Barda de Panteon (Cemetary Wall) silver gelatin print 1964', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Obrero en Huelga, Asesinado (Striking Worker, Assassinated)', '2011-05-05 03:42:39', '1982.8.1.5.jpg', 'Manuel Alvarez Bravo Obrero en Huelga, Asesinado (Striking Worker, Assassinated) Silver gelatin print 1934', 'Gift of Mr, and Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (47.9ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Tumba Reciente (Fresh Grave)', '2011-05-05 03:42:39', '1982.8.1.6.jpg', 'Bravo, Manuel Alvarez Tumba Reciente (Fresh Grave) Photography 1933', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (10.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Paisage Inventado (Invented Landscape)', '2011-05-05 03:42:39', '1982.8.1.7.jpg', 'Bravo, Manuel Alvarez Paisage Inventado (Invented Landscape) Photography', 'Gift of Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (8.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Friedlander, Lee', 'Lee Ave - Butte, Montana, 1970', '2011-05-05 03:42:39', '1982.8.4.2.jpg', 'Friedlander, Lee Lee Ave - Butte, Montana, 1970 Photography, black and white selenium toned print; printed on Dupont Veralure (VLTW); mounted on 615 GSM Imperial 300 lb. hand made paper 1970', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Granoff Music Bldg., 20 Talbot Ave.')
+  [1m[36mSQL (11.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Ritual Vessel', '2011-05-05 03:42:39', '1982.9.2.jpg', 'Unknown Ritual Vessel Ceramics, terracotta 7th-10th century A.D.', 'Mr. Philip Pearlstein', '2011-05-05 03:42:39', NULL, 'Vessel', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (49.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (26.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bernard, Emile', 'La Ribay, 1 May 1886', '2011-05-05 03:42:39', '1982.1.jpg', 'Emile Bernard La Ribay, 1 May 1886 oil on canvas 1886', 'Gift of Robert and Ruth Remis', '2011-05-05 03:42:39', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (19.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Fabric Fragment', '2011-05-05 03:42:39', '1983.1.2.5.jpg', 'Unknown Fabric Fragment Textile, embroidered textile fragment 300-100 b.c.', 'Esther Merrin', '2011-05-05 03:42:39', NULL, 'Cloth Fragment', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (14.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Picasso, Pablo', 'Meleager Kills the Calydonian Boar (from Ovid’s “Metamorphoses”)', '2011-05-05 03:42:39', '1983.2.1.jpg', 'Picasso, Pablo Meleager Kills the Calydonian Boar (from Ovid’s “Metamorphoses”) Graphic Arts, etching 1930', 'Gift of Dr. Lawrence Dubin', '2011-05-05 03:42:39', NULL, 'Print', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (20.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Picasso, Pablo', 'The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovid’s “Metamorphoses”)', '2011-05-05 03:42:39', '1983.2.2.jpg', 'Pablo Picasso The Daughters of Minyas Refuse to Acknowledge the God, Bacchus (from Ovid’s “Metamorphoses”) etching 1930', 'Gift of Dr. Lawrence Dubin', '2011-05-05 03:42:39', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (64.8ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Picasso, Pablo', 'Deucalion and Pyrrha create a New Human Race (from Ovid’s “Metamorphoses”)', '2011-05-05 03:42:39', '1983.2.3.jpg', 'Picasso, Pablo Deucalion and Pyrrha create a New Human Race (from Ovid’s “Metamorphoses”) Graphic Arts, etching 1930', 'Gift of Dr. Lawrence Dubin', '2011-05-05 03:42:39', NULL, 'Print', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (24.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Alcalay, Albert', 'Evolving Forms in Landscape', '2011-05-05 03:42:39', '1983.7.1.jpg', 'Alcalay, Albert Evolving Forms in Landscape Painting, oil on canvas 1971', 'Dr. Saul Hirshberg', '2011-05-05 03:42:39', NULL, 'Painting', 'Medford, Packard Hall, 4 The Green')[0m
+  [1m[35mSQL (37.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Head of child', '2011-05-05 03:42:39', '1983.9.jpg', 'Unknown Head of child Sculpture, marble 17th century CE', 'Gift of Jeremy Merrin', '2011-05-05 03:42:39', NULL, 'Sculpture', 'Medford, Cohen Auditorium, 15 South Campus Rd.')
+  [1m[36mSQL (27.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown artist', 'Standing Priest / Noble with Headdress (Aztec Stone Figure)', '2011-05-05 03:42:39', '1983.11.jpg', 'Unknown artist Standing Priest / Noble with Headdress (Aztec Stone Figure) volcanic stone c. 1400 - 1520', 'Mr. Seth Merrin', '2011-05-05 03:42:39', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (12.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Moore, Henry', 'Seated Mother with twins', '2011-05-05 03:42:39', '1983.13.jpg', 'Moore, Henry Seated Mother with twins Graphic Arts, watercolor, gouache, pen and black ink on paper 1981', 'Mr. and Mrs. Jeffrey Loria', '2011-05-05 03:42:39', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (8.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Nevelson, Louise', 'Untitled', '2011-05-05 03:42:39', '1984.4.jpg', 'Nevelson, Louise Untitled, ca. 1962 Sculpture, gold paint on wood', 'Edward Merrin', '2011-05-05 03:42:39', NULL, 'Sculpture', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')[0m
+  [1m[35mSQL (9.9ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Resnick, Milton', 'Straws II', '2011-05-05 03:42:39', '1984.10.2.jpg', 'Resnick, Milton Straws II oil on canvas 1982', 'Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Painting', 'Fine Arts Enterprises')
+  [1m[36mSQL (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('De Kooning, Elaine', 'Bacchus #20', '2011-05-05 03:42:39', '1984.10.3.jpg', 'Elaine De Kooning Bacchus #20 acrylic and oil on canvas 1980', 'Mr. & Mrs Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (12.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Gechtoff, Sonia', 'Small Sea Wall II', '2011-05-05 03:42:39', '1984.10.4.jpg', 'Gechtoff, Sonia Small Sea Wall II Graphic Arts, acrylic and pencil on paper 1981', 'Mr. and Mrs. Nathan Gantcher', '2011-05-05 03:42:39', NULL, 'Drawing', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (13.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Kertesz, Andre', 'Forced March to the Front between Lonie and Mitulen, Poland', '2011-05-05 03:42:39', '1984.11.11.jpg', 'Kertesz, Andre Forced March to the Front between Lonie and Mitulen, Poland Photography, black and white silver print 19 July, 1915', 'Gift of Bruce M. Male', '2011-05-05 03:42:39', '1915-07-19', 'Print, Photographic', 'Medford, Packard Hall, 4 The Green')[0m
+  [1m[35mSQL (19.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Moore, Henry', 'Untitled (Figure in Skirt)', '2011-05-05 03:42:39', '1984.13.jpg', 'Moore, Henry Untitled (Figure in Skirt) Sculpture, bronze 20th century', 'Gift of Mr. Jeffrey Loria', '2011-05-05 03:42:39', NULL, 'Sculpture', 'Medford, Cohen Auditorium, 15 South Campus Rd.')
+  [1m[36mSQL (46.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Nevelson, Louise', 'Untitled (two part sculpture)', '2011-05-05 03:42:39', '1985.2.jpg', 'Louise Nevelson Untitled (two part sculpture) black paint on wood n.d.', 'Louise Nevelson', '2011-05-05 03:42:39', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (9.8ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Postmaster Brown, Old Rag, Virginia, 1935', '2011-05-05 03:42:39', '1985.4.1.jpg', 'Arthur Rothstein Postmaster Brown, Old Rag, Virginia, 1935 Silver gelatin print 1935', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Arthur Rothstein - portfolio of 30 photographs', '2011-05-05 03:42:39', '1985.4.1-30.jpg', 'Rothstein, Arthur Arthur Rothstein - portfolio of 30 photographs Photography, black and white silver print 1981', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (10.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Girl at Gee’s Bend, Alabama 1937', '2011-05-05 03:42:39', '1985.4.2.jpg', 'Arthur Rothstein Girl at Gee’s Bend, Alabama 1937 Silver gelatin print 1937', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (36.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Vernon Evans, migrant to Oregon from South Dakota 1936', '2011-05-05 03:42:39', '1985.4.3.jpg', 'Rothstein, Arthur Vernon Evans, migrant to Oregon from South Dakota 1936 Photography, black and white silver prints 1936', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')[0m
+  [1m[35mSQL (11.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Migrant Family, Oklahoma 1936', '2011-05-05 03:42:39', '1985.4.4.jpg', 'Arthur Rothstein Migrant Family, Oklahoma 1936 Silver gelatin print 1936', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (7.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Dust Storm, Cimarron County, Oklahoma 1936', '2011-05-05 03:42:39', '1985.4.5.jpg', 'Rothstein, Arthur Dust Storm, Cimarron County, Oklahoma 1936 Photography, black and white silver prints 1936', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (11.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Skull, Badlands, South Dakota 1936', '2011-05-05 03:42:39', '1985.4.6.jpg', 'Rothstein, Arthur Skull, Badlands, South Dakota 1936 Photography, black and white silver prints 1936', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (35.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Minnie Knox, Garrett County, Maryland 1937', '2011-05-05 03:42:39', '1985.4.7.jpg', 'Rothstein, Arthur Minnie Knox, Garrett County, Maryland 1937 Photography, black and white silver prints 1937', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')[0m
+  [1m[35mSQL (51.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Migrant Worker, Visalia, California 1940', '2011-05-05 03:42:39', '1985.4.8.jpg', 'Rothstein, Arthur Migrant Worker, Visalia, California 1940 Photography, black and white silver prints 1940', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:39', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (9.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'John Dudeck, Dalton, New York 1937', '2011-05-05 03:42:40', '1985.4.9.jpg', 'Rothstein, Arthur John Dudeck, Dalton, New York 1937 black and white silver prints 1937', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (11.2ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (29.6ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Flood Victim, Missouri 1938', '2011-05-05 03:42:40', '1985.4.10.jpg', 'Rothstein, Arthur Flood Victim, Missouri 1938 Photography, black and white silver prints 1938', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (27.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Mississippi River Flood, St. Louis, Missouri 1943', '2011-05-05 03:42:40', '1985.4.11.jpg', 'Rothstein, Arthur Mississippi River Flood, St. Louis, Missouri 1943 Photography, black and white silver prints 1943', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (24.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Agate, Nebraska 1939', '2011-05-05 03:42:40', '1985.4.12.jpg', 'Rothstein, Arthur Agate, Nebraska 1939 Photography, black and white silver prints 1939', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (24.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Sheepherder’s Camp, Montana 1939', '2011-05-05 03:42:40', '1985.4.13.jpg', 'Rothstein, Arthur Sheepherder’s Camp, Montana 1939 Photography, black and white silver print 1939', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (27.8ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Hotel de Paris, exterior, Georgetown, Colorado 1939', '2011-05-05 03:42:40', '1985.4.14.jpg', 'Rothstein, Arthur Hotel de Paris, exterior, Georgetown, Colorado 1939 Photography, black and white silver prints 1939', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')
+  [1m[36mSQL (24.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Shoeshine Man, New York City 1937', '2011-05-05 03:42:40', '1985.4.16.jpg', 'Rothstein, Arthur Shoeshine Man, New York City 1937 Photography, black and white silver prints 1937', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (69.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Gamblers, Las Vegas, Nevada 1947', '2011-05-05 03:42:40', '1985.4.17.jpg', 'Rothstein, Arthur Gamblers, Las Vegas, Nevada 1947 Photography, black and white silver prints 1947', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (23.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Pool Hall, Culp, Illinois 1940', '2011-05-05 03:42:40', '1985.4.18.jpg', 'Rothstein, Arthur Pool Hall, Culp, Illinois 1940 Photography, black and white silver prints 1940', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (25.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Boy with chicken, Hungjao, China 1945', '2011-05-05 03:42:40', '1985.4.20.jpg', 'Rothstein, Arthur Boy with chicken, Hungjao, China 1945 Photography, black and white silver prints 1945', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')
+  [1m[36mSQL (26.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'The Burma Road 1945', '2011-05-05 03:42:40', '1985.4.21.jpg', 'Rothstein, Arthur The Burma Road 1945 Photography, black and white silver prints 1945', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (9.9ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Famine Victim, Hengyang, China 1946', '2011-05-05 03:42:40', '1985.4.22.jpg', 'Rothstein, Arthur Famine Victim, Hengyang, China 1946 Photography, black and white silver prints 1946', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (12.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Burial of Famine Victim, Hengyang, China 1946', '2011-05-05 03:42:40', '1985.4.23.jpg', 'Rothstein, Arthur Burial of Famine Victim, Hengyang, China 1946 Photography, black and white silver prints 1946', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (13.0ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Coal Miners, Wales 1947', '2011-05-05 03:42:40', '1985.4.24.jpg', 'Rothstein, Arthur Coal Miners, Wales 1947 Photography, black and white silver prints 1947', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (28.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Young Coal Miner, Wales 1947', '2011-05-05 03:42:40', '1985.4.25.jpg', 'Rothstein, Arthur Young Coal Miner, Wales 1947 Photography, black and white silver prints 1947', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (9.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Farmers in the market, Tocco, Italy 1947', '2011-05-05 03:42:40', '1985.4.26.jpg', 'Rothstein, Arthur Farmers in the market, Tocco, Italy 1947 Photography, black and white silver prints 1947', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (13.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'John Marin in his studio, Hoboken, New Jersey 1949', '2011-05-05 03:42:40', '1985.4.27.jpg', 'Rothstein, Arthur John Marin in his studio, Hoboken, New Jersey 1949 Photography, black and white silver prints 1949', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Granoff Music Bldg., 20 Talbot Ave.')[0m
+  [1m[35mSQL (40.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'American Soldiers in a Nightclub, Vienna, Austria 1947', '2011-05-05 03:42:40', '1985.4.28.jpg', 'Rothstein, Arthur American Soldiers in a Nightclub, Vienna, Austria 1947 Photography, black and white silver prints 1947', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (34.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'At a Charity Ball, New York City 1951', '2011-05-05 03:42:40', '1985.4.29.jpg', 'Rothstein, Arthur At a Charity Ball, New York City 1951 Photography, black and white silver prints 1951', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (12.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rothstein, Arthur', 'Rockland, Maine 1937', '2011-05-05 03:42:40', '1985.4.30.jpg', 'Rothstein, Arthur Rockland, Maine 1937 Photography, black and white silver prints 1951', 'Gift of Dr. and Mrs. (Joan) Daniel Schuman in memory of Alfred Siegel (‘26)', '2011-05-05 03:42:40', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')
+  [1m[36mSQL (7.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Durer, Albrecht', 'The Flight into Egypt, (one of 17 cuts from the series “The Life of the Virgin”)', '2011-05-05 03:42:40', '1985.5.jpg', 'Durer, Albrecht The Flight into Egypt, (one of 17 cuts from the series “The Life of the Virgin”) Graphic Arts, wood engraving 1503 according to Friedlander', 'Steven and Linda Shapiro in honor of Mr. George Fine', '2011-05-05 03:42:40', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (12.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Roman statuette (male)', '2011-05-05 03:42:40', '1985.6.1.jpg', 'Unknown Roman statuette (male) Sculpture, bronze 2nd/3rd CE', 'Gift of Jeremy Merrin', '2011-05-05 03:42:40', NULL, 'Sculpture', 'Medford, Cohen Auditorium, 15 South Campus Rd.')
+  [1m[36mSQL (34.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Olmec Head', '2011-05-05 03:42:40', '1985.6.2.jpg', 'Unknown Olmec Head Sculpture, stone 1500-1000 B.C.', 'Gift of Jeremy Merrin', '2011-05-05 03:42:40', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (12.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Mexican Mirror Back', '2011-05-05 03:42:40', '1985.6.5.jpg', 'Unknown Mexican Mirror Back Tools, stone 1000-1500 A.D.', 'Mr. Seth Merrin', '2011-05-05 03:42:40', NULL, 'Mirror, Hand (Fragment)', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (8.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Machica Pectoral (Lomangera)', '2011-05-05 03:42:40', '1985.6.11.jpg', 'Unknown Machica Pectoral (Lomangera) Sculpture, bronze ca. 1 B.C - 1 A.D.', 'Samuel Merrin', '2011-05-05 03:42:40', NULL, 'Pectoral', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (8.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Frost, George Albert', 'View of Tufts College in 1892', '2011-05-05 03:42:40', '1986.1.jpg', 'George Albert Frost View of Tufts College in 1892 oil on canvas 1892', 'Mrs. Mason Schudder and Mr. John H. Vandermark', '2011-05-05 03:42:40', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (41.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hartigan, Grace', 'Lady with Pomegranates', '2011-05-05 03:42:40', '1986.7.jpg', 'Grace Hartigan Lady with Pomegranates oil on canvas 1985', 'Mr. & Mrs. Nathan Gantcher', '2011-05-05 03:42:40', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (7.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Greek Geometric Horse', '2011-05-05 03:42:40', '1986.8.2.jpg', 'Unknown Greek Geometric Horse Sculpture, terracotta 8th-7th century B.C.', 'Gift of Noma Copley', '2011-05-05 03:42:40', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (7.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Head', '2011-05-05 03:42:40', '1986.8.7.jpg', 'Unknown Head Sculpture, granite 7th - 6th century BCE', 'Gift of Noma Copley', '2011-05-05 03:42:40', NULL, 'Sculpture', 'Medford, Cohen Auditorium, 15 South Campus Rd.')[0m
+  [1m[35mSQL (9.2ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Stella, Frank', 'Bogoria', '2011-05-05 03:42:40', '1986.016.jpg', 'Frank Stella Bogoria aluminum with metal polychrome 1971', 'Gift of Frank Stella Jr.', '2011-05-05 03:42:40', NULL, 'Sculpture', 'Medford, Cohen Auditorium, 15 South Campus Rd.')
+  [1m[36mSQL (35.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hunt, Richard', 'Planar Mountain', '2011-05-05 03:42:41', '1987.3.jpg', 'Richard Hunt Planar Mountain welded corten steel 1971', 'Miriam Spertus', '2011-05-05 03:42:41', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (10.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Stopforth, Paul', 'The Little Fascist', '2011-05-05 03:42:41', '1988.1.1.jpg', 'Paul Stopforth The Little Fascist, 1987 oil and beeswax on board', 'Purchase from monies from budget of the committee on the University Art Collection', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Cohen Auditorium, 15 South Campus Rd.')
+  [1m[36mSQL (10.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Stopforth, Paul', 'The Visit', '2011-05-05 03:42:41', '1988.1.2.jpg', 'Stopforth, Paul The Visit Graphic Arts, charcoal on paper', 'Purchase from funds from the Committee on the Universiyt Art Collection', '2011-05-05 03:42:41', NULL, 'Drawing', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (13.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.9ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown artist', 'Porpianong (Senufo Wood Figure of a Hornbill)', '2011-05-05 03:42:41', '1988.3.1.jpg', 'Unknown artist Porpianong (Senufo Wood Figure of a Hornbill) wood and pigments n.d. Standing figure with spread wings, long beak to the breast. Two small hornbills standing on wings.', 'Jonathan M. Tisch', '2011-05-05 03:42:41', NULL, 'Sculpture', 'Medford, Granoff Music Bldg., 20 Talbot Ave.')
+  [1m[36mSQL (35.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Head of Hermes Propylaios', '2011-05-05 03:42:41', '1988.4.jpg', 'Unknown Head of Hermes Propylaios Sculpture, white crystalline marble n.d.', 'Gift of Jeremy, Seth, and Samuel Merrin, and Esther Merrin Bronstein', '2011-05-05 03:42:41', NULL, 'Sculpture', 'Medford, Cohen Auditorium, 15 South Campus Rd.')[0m
+  [1m[35mSQL (13.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Kensett, John Frederick', 'Lake George Landscape, Late Summer', '2011-05-05 03:42:41', '1991.4.1.jpg', 'John Frederick Kensett Lake George Landscape, Late Summer Oil on canvas 1868', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (12.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Zorach, William', 'Standing Woman', '2011-05-05 03:42:41', '1991.4.2.jpg', 'William Zorach Standing Woman marble', 'Arnold and Emily Weiss', '2011-05-05 03:42:41', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (7.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Tryon, Dwight William', 'Long Island Landscape', '2011-05-05 03:42:41', '1991.6.1.jpg', 'Dwight William Tryon Long Island Landscape oil on canvas on board n.d.', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (46.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Wood, Grant', 'Ph.D.', '2011-05-05 03:42:41', '1991.6.3.jpg', 'Grant Wood Ph.D. oil on canvas n.d.', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (10.8ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Pearce, Charles Sprague', 'Harvest Moon', '2011-05-05 03:42:41', '1991.6.5.jpg', 'Charles Sprague Pearce Harvest Moon, n.d. oil on canvas Agricultural landscape with high horizon line. Female figure in right foreground carrying pitchfork.', 'Dr. Arnold Weiss', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 3rd Fl')
+  [1m[36mSQL (7.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Porter, Fairfield', 'Landscape-Southampton Hills', '2011-05-05 03:42:41', '1991.6.6.jpg', 'Fairfield Porter Landscape-Southampton Hills oil on canvas 20th century', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (68.9ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Beal, Gifford', 'From My Studio', '2011-05-05 03:42:41', '1991.6.7.jpg', 'Gifford Beal From My Studio, 1956 oil on canvas Bright green landscape with very thick, visible brushstrokes.', 'Dr. Arnold Weiss', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 3rd Fl')
+  [1m[36mSQL (38.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Metcalf, Willard', 'Snake River, New Hampshire', '2011-05-05 03:42:41', '1991.6.8.jpg', 'Willard Metcalf Snake River, New Hampshire oil on canvas n.d.', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (26.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Beal, Gifford', 'Julius Caesar', '2011-05-05 03:42:41', '1991.6.11.jpg', 'Gifford Beal Julius Caesar oil on panel undated', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (26.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'Un Poco Alegre Y Graciosa', '2011-05-05 03:42:41', '1991.8.3.1.jpg', 'Bravo, Manuel Alvarez Un Poco Alegre Y Graciosa Photography, black and white silver print 1974', 'Gift of Nathan Gantcher', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Location Unknown')[0m
+  [1m[35mSQL (26.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bravo, Manuel Alvarez', 'La de las Bellas Artes', '2011-05-05 03:42:41', '1991.8.3.5.jpg', 'Bravo, Manuel Alvarez La de las Bellas Artes Photography, black and white silver print 1974', 'Gift of Nanthan Gantcher', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (12.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Edgerton, Dr. Harold', 'Milk Drop Coronet', '2011-05-05 03:42:41', '1991.8.4.9.jpg', 'Edgerton, Dr. Harold Milk Drop Coronet Photography, black and white silver print 1935', 'Gift of Nathan Gantcher', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Tisch Library, 35 Professors Row')[0m
+  [1m[35mSQL (7.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Edgerton, Dr. Harold', 'Bullet Through the Balloons', '2011-05-05 03:42:41', '1991.8.4.11.jpg', 'Edgerton, Dr. Harold Bullet Through the Balloons Photography, black and white silver print 1959', 'Gift of Nathan Gantcher', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Anderson Hall, 200 College Ave.')
+  [1m[36mSQL (18.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Kertesz, Andre', 'Forced March to the Front between Lonie and Mitulen, Poland', '2011-05-05 03:42:41', '1991.8.7.6.jpg', 'Kertesz, Andre Forced March to the Front between Lonie and Mitulen, Poland Photography, black and white silver print 19 July, 1915', 'Mr. Nathan Gantcher', '2011-05-05 03:42:41', '1915-07-19', 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (39.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Siskind, Aaron', 'Lima 89, (Duplicate)', '2011-05-05 03:42:41', '1991.8.9.4.jpg', 'Siskind, Aaron Lima 89, (Duplicate) Photography 1989', 'Nanthan Gantcher', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (8.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Siskind, Aaron', 'Westport 87 (Duplicate)', '2011-05-05 03:42:41', '1991.8.9.8.jpg', 'Siskind, Aaron Westport 87 (Duplicate) Photography 1988', 'Nanthan Gantcher', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (9.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hesse, Eva', 'Untitled', '2011-05-05 03:42:41', '1992.1.3.jpg', 'Eva Hesse Untitled Mixed media 1960', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Drawing', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (9.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Weber, Max', 'Female Nude', '2011-05-05 03:42:41', '1992.1.4.jpg', 'Weber, Max Female Nude Graphic Arts, charcoal on paper', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Drawing', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (23.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Park, David', 'Male Portrait', '2011-05-05 03:42:41', '1992.1.8.jpg', 'David Park Male Portrait Painting, oil on canvas 20th century', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (10.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Dali, Salvador', 'Ace of Diamonds', '2011-05-05 03:42:41', '1992.3.3.4.jpg', 'Dali, Salvador Ace of Diamonds Graphic Arts, lithograph printed in 1971', 'Gift of Dr. and Mrs. Gilbert Palley', '2011-05-05 03:42:41', NULL, 'Print', 'Medford, Tisch Library, 35 Professors Row')[0m
+  [1m[35mSQL (8.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Townley, Hugh', 'Gate 14', '2011-05-05 03:42:41', '1992.006.jpg', 'Townley, Hugh Gate 14 Sculpture, various woods 1984', 'Henry Lusardi / Doehla Foundation', '2011-05-05 03:42:41', NULL, 'Sculpture', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (8.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Guigou, Paul Camille', 'Les bords de l’Aiguerbron a Lourmarin', '2011-05-05 03:42:41', '1993.7.jpg', 'Paul Camille Guigou Les bords de l’Aiguerbron a Lourmarin oil on board n.d.', 'Gift of Dr. Arnold Weiss (DDS 1953)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Mugar Hall, 160R Packard Ave., Fares Center')[0m
+  [1m[35mSQL (54.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Sheng, Yuan Yun', 'Two Ancient Chinese Tales-Blue and Red and Yellow Equals White', '2011-05-05 03:42:41', '1994.1.jpg', 'Yuan Yun Sheng Two Ancient Chinese Tales-Blue and Red and Yellow Equals White acrylic on canvas 1983', 'commission for library', '2011-05-05 03:42:41', NULL, 'Painting', 'Fine Arts Enterprises')
+  [1m[36mSQL (9.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Morgan, Maud', 'Spacescape', '2011-05-05 03:42:41', '1997.4.3.jpg', 'Morgan, Maud Spacescape oil on canvas 1971', 'Maud Morgan', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (8.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bridges, Marilyn', 'Heightened Perspectives, Stonehenge #2, Wiltshire, England', '2011-05-05 03:42:41', '1997.42.4.jpg', 'Bridges, Marilyn Heightened Perspectives, Stonehenge #2, Wiltshire, England Silver Gelatin Print 1985', 'Mr. Michael Targoff', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (32.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bridges, Marilyn', 'Heightened Perspectives, Cherhill Horse, Wiltshire, England', '2011-05-05 03:42:41', '1997.42.5.jpg', 'Bridges, Marilyn Heightened Perspectives, Cherhill Horse, Wiltshire, England Photography, silver gelatin print portfolio 1985', 'Mr. Michael Targoff', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Tisch Library, 35 Professors Row')[0m
+  [1m[35mSQL (69.2ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bridges, Marilyn', 'Heightened Perspectives, Lane Manned, N.Y.C., New York', '2011-05-05 03:42:41', '1997.42.16.jpg', 'Bridges, Marilyn Heightened Perspectives, Lane Manned, N.Y.C., New York Photography, silver gelatin print portfolio 1985', 'Mr. Michael Targoff', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (8.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Neel, Alice', 'Spanish Harlem', '2011-05-05 03:42:41', '1997.44.jpg', 'Alice Neel Spanish Harlem oil on canvas 1938', 'Richard Neel & Dr. Hartley Neel (1969, M.D.)', '2011-05-05 03:42:41', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (9.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Norman, Dorothy', 'Hand, Chatham', '2011-05-05 03:42:41', '1997.44.13.jpg', 'Norman, Dorothy Hand, Chatham Photography, silver print 1937', 'Mr. Michael Targoff', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (9.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Norman, Dorothy', 'Church Steeple, Falmouth', '2011-05-05 03:42:41', '1997.44.14.jpg', 'Norman, Dorothy Church Steeple, Falmouth Photography, silver print 1937', 'Mr. Michael Targoff', '2011-05-05 03:42:41', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (55.2ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Woodruff, Hale', 'Trusty on a Mule', '2011-05-05 03:42:42', '1998.61.jpg', 'Woodruff, Hale Trusty on a Mule Graphic Arts, linocut 1931-1946', 'Gift of Kathryn (class of 1977) and Kenneth Chenault, New York', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (25.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Misrach, Richard', 'Aerial Target (“Dart”) Shot Down in Ordinance Area, Wendover Air Base, Utah', '2011-05-05 03:42:42', '1999.01.jpg', 'Misrach, Richard Aerial Target (“Dart”) Shot Down in Ordinance Area, Wendover Air Base, Utah Photography, dye coupler photograph 1998', 'Courtesy of the Artist', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')[0m
+  [1m[35mSQL (14.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Misrach, Richard', 'Cloudburst, Nuclear Test Site, Nevada', '2011-05-05 03:42:42', '1999.02.jpg', 'Misrach, Richard Cloudburst, Nuclear Test Site, Nevada Photography, dye coupler photograph 1987', 'Courtesy of the Artist', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Eaton Hall, 5 The Green')
+  [1m[36mSQL (22.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Ofoni, Justice (?)', 'Best in Hair Cut, Barber Board', '2011-05-05 03:42:42', '1999.4.jpg', 'Ofoni, Justice (?) Best in Hair Cut, Barber Board Painting, paint on board unknown', NULL, '2011-05-05 03:42:42', NULL, 'Painting', 'Medford, Dowling Hall, 419 Boston Ave.')[0m
+  [1m[35mSQL (37.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hodgkin, Howard', 'Red Palm', '2011-05-05 03:42:42', '2000.4.jpg', 'Hodgkin, Howard Red Palm Graphic Arts, hand-colored lithograph, with watercolor and gouache c. 1986', 'Orna Shulman', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (36.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Frankenthaler, Helen', 'Orange Shapes in Frame', '2011-05-05 03:42:42', '2000.16.jpg', 'Helen Frankenthaler Orange Shapes in Frame acryllic on canvas 1964', 'Placido Arango', '2011-05-05 03:42:42', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (26.9ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Jacques, Michael L.', 'Spring Swans', '2011-05-05 03:42:42', '2000.25.8.jpg', 'Jacques, Michael L. Spring Swans (public park benches and swans) Graphic Arts, etching', NULL, '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (9.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Peress, Gilles', 'Rwandan Hutu Refugees waiting for medical attention, Tanzania', '2011-05-05 03:42:42', '2000.27.1.jpg', 'Peress, Gilles Rwandan Hutu Refugees waiting for medical attention, Tanzania Photography, black and white 1994', 'Mr. Michael Targoff', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (11.4ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Peress, Gilles', 'Evacuation of Jews, Skanderia, Sarajevo, Bosnia', '2011-05-05 03:42:42', '2000.27.5.jpg', 'Peress, Gilles Evacuation of Jews, Skanderia, Sarajevo, Bosnia Photography, black and white 1993', 'Mr. Michael Targoff', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (18.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Noguchi, Isamu', 'Worm Stone', '2011-05-05 03:42:42', '2000.31.jpg', 'Noguchi, Isamu Worm Stone Sculpture, stone, granite', 'Mr. Harold Greisman', '2011-05-05 03:42:42', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (41.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Miro, Joan', 'question?', '2011-05-05 03:42:42', '2001.02.jpg', 'Miro, Joan Graphic Arts, serigraph', 'on loan from Dental School', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (7.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES (NULL, 'Ceremonial Mask', '2011-05-05 03:42:42', '2001.03.jpg', 'Ceremonial Mask Ceremonial Object, silver, copper, cinnabar paint, cotton 750-1150 AD', 'Samuel Merrin', '2011-05-05 03:42:42', NULL, 'Mask', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (8.9ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Zeus', '2011-05-05 03:42:42', '2001.07.jpg', 'Unknown Zeus Sculpture 3rd/4th c. AD', 'Edward Merrin', '2011-05-05 03:42:42', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Gall, Sally', 'Canoe', '2011-05-05 03:42:42', '2001.08.02.jpg', 'Gall, Sally Canoe Silver gelatin print 1990', 'Mr. Michael Targoff/Mary Cruz', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Tisch Library, 35 Professors Row')[0m
+  [1m[35mSQL (55.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Fink, Aaron', 'Walking Man No. 3', '2011-05-05 03:42:42', '2002.02.jpg', 'Fink, Aaron Walking Man No. 3 oil on canvas 1983', 'Kim and David Slater', '2011-05-05 03:42:42', NULL, 'Painting', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (8.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Meyerowitz, Joel', 'JFK Airport', '2011-05-05 03:42:42', '2002.02.01.jpg', 'Meyerowitz, Joel JFK Airport Photography 1968', 'Mr. Michael Targoff', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Tisch Library, 35 Professors Row')[0m
+  [1m[35mSQL (8.8ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Meyerowitz, Joel', 'Central Park', '2011-05-05 03:42:42', '2002.02.05.jpg', 'Meyerowitz, Joel Central Park Photography 1969', 'Mr. Michael Targoff', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Univ. Advancement, 80 George St.')
+  [1m[36mSQL (11.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hessing, Jeffrey', 'Interior', '2011-05-05 03:42:42', '2003.003.jpg', 'Hessing, Jeffrey Interior oil on canvas 1990', 'Pucker Gallery', '2011-05-05 03:42:42', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')[0m
+  [1m[35mSQL (44.8ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Pomodoro, Arnoldo', 'Lettera Narrahira', '2011-05-05 03:42:42', '2003.014.jpg', 'Pomodoro, Arnoldo Lettera Narrahira Sculpture 1977', 'Dr. and Mrs. Albert L. Rosenthal', '2011-05-05 03:42:42', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (11.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Kandinsky, Wassily', 'Weisser Klang (Roethel 113)', '2011-05-05 03:42:42', '2003.016.jpg', 'Kandinsky, Wassily Weisser Klang (Roethel 113) Graphic Arts, 5 colored woodblock print 1911', 'Dr. and Mrs. Albert L. Rosenthal', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')[0m
+  [1m[35mSQL (39.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Pinardi, Enrico', 'Solitude, 1987', '2011-05-05 03:42:42', '2004.002.jpg', 'Pinardi, Enrico Enrico Pinardi, American (b. 1934) Solitude, 1987 graphite on paper', 'Enrico Pinardi and Pucker Gallery', '2011-05-05 03:42:42', NULL, 'Drawing', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (13.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('MacMillan, Jim', 'First Light, 9/12/01', '2011-05-05 03:42:42', '2004.006.jpg', 'MacMillan, Jim First Light, 9/12/01 Photography, color Photograph 2001', 'Gift of the artist (check with Amy S)', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Cohen Auditorium, 15 South Campus Rd.')[0m
+  [1m[35mSQL (28.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Pearlstein, Phillip', 'Female Nude Seated on Stool', '2011-05-05 03:42:42', '2004.025.jpg', 'Pearlstein, Phillip Female Nude Seated on Stool Graphic Arts, watercolor 1972', 'Dorothy M. Skinner (J\'52) and John S. Cook', '2011-05-05 03:42:42', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (25.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Smith, David', 'Untitled, (abstract drawing for sculpture)', '2011-05-05 03:42:42', '2004.026.jpg', 'Smith, David Untitled, (abstract drawing for sculpture) Graphic Arts, watercolor and ink on paper 1950', 'Dorothy M. Skinner (J\'52) and John S. Cook', '2011-05-05 03:42:42', NULL, 'Drawing', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (25.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Gottlieb, Adolph', 'Crimson Ground', '2011-05-05 03:42:42', '2004.027.jpg', 'Gottlieb, Adolph Crimson Ground Graphic Arts, Screenprint 1972', 'Dr. Al and Carol Rosenthal', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')
+  [1m[36mSQL (26.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Calder, Alexander', 'Untitled (red, yellow, orange, blue an black abstract design)', '2011-05-05 03:42:42', '2004.028.jpg', 'Calder, Alexander Untitled (red, yellow, orange, blue an black abstract design) Graphic Arts, lithograph not dated', 'Dr. Al and Carol Rosenthal', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')[0m
+  [1m[35mSQL (10.3ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Vasarely, Victor', 'Untitled (printed in red and green) Edition # 12/100', '2011-05-05 03:42:42', '2004.029.jpg', 'Vasarely, Victor Untitled (printed in red and green) Edition # 12/100 Graphic Arts, silkscreen not dated', 'Dr. Al and Carol Rosenthal', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (12.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Porter, Fairfield', 'Isle au Haut', '2011-05-05 03:42:42', '2004.031.jpg', 'Porter, Fairfield Isle au Haut Graphic Arts, color lithograph, edition no. 13/100 1974-5', 'Dr. Al and Carol Rosenthal', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Ballou Hall, 1 The Green, 3rd Fl')[0m
+  [1m[35mSQL (26.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Cocteau, Jean', 'Through Nature’s Window Edition # 21/40', '2011-05-05 03:42:42', '2004.032.jpg', 'Cocteau, Jean Through Nature’s Window Edition # 21/40 Lithograph not dated', 'Dr. Al and Carol Rosenthal', '2011-05-05 03:42:42', NULL, 'Print', 'Boston, Medical School, 75 Kneeland St., 9th Floor')
+  [1m[36mSQL (31.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Davie, Alan', 'Homage to Caribs No. 41', '2011-05-05 03:42:42', '2004.042.jpg', 'Alan Davie Homage to Caribs No. 41, 1976 oil on canvas', 'Skinner, Dorothy M. and John S. Cook', '2011-05-05 03:42:42', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (10.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rosenquist, James', 'Sister Shrieks', '2011-05-05 03:42:42', '2005.002.jpg', 'James Rosenquist Sister Shrieks (36/39), 1987 Lithograph, monoprint, and collage', 'Lipsett, James', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Granoff Music Bldg., 20 Talbot Ave.')
+  [1m[36mSQL (24.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Calder, Alexander', 'Untitled', '2011-05-05 03:42:42', '2005.01.jpg', 'Calder, Alexander Untitled Lithograph, 124/125', 'Aidekman-Kaye, Shirley', '2011-05-05 03:42:42', NULL, 'Print', 'Medford, Univ. Advancement, 80 George St.')[0m
+  [1m[35mSQL (10.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Baril, Tom', 'Chrysler Building', '2011-05-05 03:42:42', '2006.002.jpg', 'Baril, Tom Tom Baril Chrysler Building, 1995 Toned gelatin silver print; Published by Double Elephant Editions, 2004', 'Targoff, Michael', '2011-05-05 03:42:42', NULL, 'Print, Photographic', 'Medford, Anderson Hall, 200 College Ave.')
+  [1m[36mSQL (60.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Baril, Tom', 'Taughannock Falls #2', '2011-05-05 03:42:43', '2006.006.jpg', 'Baril, Tom Tom Baril Taughannock Falls #2, 1997/2004 Toned gelatin silver print; Published by Double Elephant Editions', 'Targoff, Michael', '2011-05-05 03:42:43', NULL, 'Print, Photographic', 'Medford, Anderson Hall, 200 College Ave.')[0m
+  [1m[35mSQL (9.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hernandez, Robert', 'Untitled', '2011-05-05 03:42:43', '2009.022.jpg', 'Robert Hernandez American (b.1978) Untitled, 2008 Archival ink, marker, white sharpie marker, and pencil, on a birch ply wood surface', 'Kenneth Aidekman', '2011-05-05 03:42:43', NULL, 'Drawing', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (7.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Kepes, Gyorgy', 'Untitled', '2011-05-05 03:42:43', 'AI_00080.jpg', 'Gyorgy Kepes Untitled (abstract design in blues and greens) acrylic with sand on canvas', 'Purchase from Saidenberg Gallery, N.Y., N. Y.', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (13.1ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hennessey, James', 'Samurai Warrior', '2011-05-05 03:42:43', 'AI_00090.jpg', 'James Hennessey Samurai Warrior cast bronze with green patina 1965', NULL, '2011-05-05 03:42:43', NULL, 'Sculpture', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (61.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Ballou, Giddings Hyde', 'Portrait of Hosea Ballou II', '2011-05-05 03:42:43', 'AI_01530.jpg', 'Giddings Hyde Ballou Portrait of Hosea Ballou II oil on canvas 19th century Bust portrait of a balding man wearing black suit.', NULL, '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 3rd Fl')[0m
+  [1m[35mSQL (7.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Walter, A.B.', 'The Rev Hosea Ballou', '2011-05-05 03:42:43', 'AI_01600_b.jpg', 'Walter, A.B. The Rev Hosea Ballou Graphic Arts, print of an engraving', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (25.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Champney, Benjamin (attributed)', 'Untitled (Ballou Hall on the Hill)', '2011-05-05 03:42:43', 'AI_01700.jpg', 'Benjamin Champney, attributed Untitled (Ballou Hall on the Hill), c.1860 oil on board Ballou Hall and possibly Packard Hall centered in composition atop green hill with trees. Both buildings silhouetted against blue sky with clouds. Small white building at end of road, left side.', 'Thomas O. Marvin', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')[0m
+  [1m[35mSQL (10.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('De Viva, Tommaso', 'Coriolanus', '2011-05-05 03:42:43', 'AI_08000.jpg', 'Tommaso De Viva Coriolanus oil on canvas', 'Gift of Dr. and Mrs. Anthony J. Guzezetta, M. ‘18', '2011-05-05 03:42:43', NULL, 'Painting', 'Fine Arts Enterprises')
+  [1m[36mSQL (26.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Morisot, Berthe', 'Untitled (Landscape with Boat)', '2011-05-05 03:42:43', 'AI_14700.3.jpg', 'Morisot, Berthe Untitled (Landscape with Boat) Graphic Arts, drypoint 1888-90', 'Dr. Maurice S. Segal', '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (53.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Custer, Edward L.', 'Landscape of the Town of Munchen', '2011-05-05 03:42:43', 'AI_27790.jpg', 'Edward L. Custer Landscape of the Town of Munchen oil on canvas 1871', 'Estate of Andrew R. Winslow', '2011-05-05 03:42:43', NULL, 'Painting', 'Fine Arts Enterprises')
+  [1m[36mSQL (9.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Baskin, Leonard', 'Pan Hermes', '2011-05-05 03:42:43', 'AI_32000.jpg', 'Baskin, Leonard Pan Hermes Graphic Arts, ink and wash on paper 1965', 'Gift of the artist', '2011-05-05 03:42:43', NULL, 'Drawing', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (9.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Sargent, John Singer', 'Portrait of Dr. Morton Prince', '2011-05-05 03:42:43', 'AI_41500.jpg', 'Sargent, John Singer Portrait of Dr. Morton Prince Painting, oil on canvas c.1895', 'Gift of Hanks Estate', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (21.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Rodin, Auguste', 'Despair', '2011-05-05 03:42:43', 'AI_45000.jpg', 'Rodin, Auguste Despair Sculpture, bronze with green patina 1890', 'Gift of Mr. and Mrs. Carl J. Gilbert', '2011-05-05 03:42:43', NULL, 'Sculpture', 'Medford, Gifford House, 161 Packard Ave.')[0m
+  [1m[35mSQL (10.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown artist', 'Portrait of Charles Tufts', '2011-05-05 03:42:43', 'AI_52000.jpg', 'Unknown artist Portrait of Charles Tufts oil on panel 19th century', NULL, '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (13.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Harrington, Sylvester', 'Portrait of Charles Tufts', '2011-05-05 03:42:43', 'AI_52010.jpg', 'Sylvester Harrington Portrait of Charles Tufts oil on panel 1839', 'Tufts Alumni Council', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (32.6ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Stuart and Rawson, Frederick T. and Albert Leighton', 'Tuft’s College', '2011-05-05 03:42:43', 'AI_52505.jpg', 'Stuart and Rawson, Frederick T. and Albert Leighton Tuft’s College Graphic Arts, engraving reproduced in book The History of Medford , by Charles Brooks', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (36.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Frost, George Albert', 'Tufts College in 1888', '2011-05-05 03:42:43', 'AI_53300.jpg', 'George Albert Frost Tufts College in 1888 oil on canvas Green landscape with rocky terrain in foreground. Fence-lined road in middleground leading into background. Tufts campus buildings visible along skyline. Figures between trees on left side differentiate this work from Frost\'s View of Tuft College in 1892 (1986.1).', 'Thomas O. Marvin', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')[0m
+  [1m[35mSQL (8.9ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Unknown', 'Portrait of Hannah Robinson Tufts', '2011-05-05 03:42:43', 'AI_53900.jpg', 'Unknown artist Portrait of Hannah Robinson Tufts oil on panel 19th century', NULL, '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (9.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Harrington, Sylvester', 'Portrait of Hannah Robinson Tufts', '2011-05-05 03:42:43', 'AI_53920.jpg', 'Sylvester Harrington Portrait of Hannah Robinson Tufts oil on panel 19th century', 'Tufts Alumni Council', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (25.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Bell, D.', 'View of Framingham Common in 1808', '2011-05-05 03:42:43', 'AI_57600.jpg', 'Bell, D. View of Framingham Common in 1808 Graphic Arts, color lithograph 1872', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Bendetson Hall, 2 The Green')
+  [1m[36mSQL (59.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Stuart, Jane', 'Portrait of George Washington', '2011-05-05 03:42:43', 'AI_58600.jpg', 'Jane Stuart Portrait of George Washington oil on canvas n.d.', 'Thomas Whittemore', '2011-05-05 03:42:43', NULL, 'Painting', 'Fine Arts Enterprises')[0m
+  [1m[35mSQL (10.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Alacy, Wendell', 'Untitled (Landscape with Windmill)', '2011-05-05 03:42:43', 'AI_70009.jpg', 'Wendell Alacy Untitled (Landscape with Windmill) oil on canvas c.1886', NULL, '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Mugar Hall, Fares Center, 160R Packard Ave,')
+  [1m[36mSQL (9.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Piranesi, Giovanni Battista', 'Temple of Neptune, Paestum, from the “Views of the Paestum”from the “Views of the Paestum”, Plate XVII, Focillon 598)', '2011-05-05 03:42:43', 'AI_70029.jpg', 'Piranesi, Giovanni Battista Temple of Neptune, Paestum, from the “Views of the Paestum”from the “Views of the Paestum”, Plate XVII, Focillon 598) Graphic Arts, etching (probably an engraving)', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (22.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Flynn, William R.', 'Wrought Iron Fences III', '2011-05-05 03:42:43', 'AI_70040.jpg', 'Flynn, William R. Wrought Iron Fences III Graphic Arts, woodcut on paper attached to canvas 1962-63', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Fine Arts Enterprises')
+  [1m[36mSQL (40.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Mora, Luis Francis', 'Rosemary in Costume', '2011-05-05 03:42:43', 'AI_70117.jpg', 'Luis Francis Mora Rosemary in Costume oil on primed linen canvas', 'Gift of the Hodgdon Estate, purchased from the artist', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 3rd Fl')[0m
+  [1m[35mSQL (10.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Cranch, Christopher Pearse', 'View of Venice', '2011-05-05 03:42:43', 'AI_70131.jpg', 'Christopher Pearse Cranch View of Venice oil on canvas n.d.', NULL, '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Mugar Hall, 160R Packard Ave., Fares Center')
+  [1m[36mSQL (8.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Cheney, Russell', 'Old Mill Bridge, Portsmouth, NH', '2011-05-05 03:42:43', 'AI_70134.jpg', 'Russell Cheney Old Mill Bridge, Portsmouth, NH oil on canvas 1934 Landscape with houses and a bridge behind a single tree that divides the composition in half.', 'Mr. C. Elmore Watkins', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Ballou Hall, 1 The Green, 2nd Fl')[0m
+  [1m[35mSQL (24.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Lintott, Edward Barnard', 'Cyclamen', '2011-05-05 03:42:43', 'AI_70138.jpg', 'Edward Barnard Lintott Cyclamen oil on canvas undated', 'Gift (?) of Lawrence Rill Schumann Art Foundation', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Gifford House, 161 Packard Ave.')
+  [1m[36mSQL (40.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Stark, James, attributed', 'Gipsies', '2011-05-05 03:42:43', 'AI_70170.jpg', 'Attributed to James Stark Gipsies oil on wood panel c.1830', 'Gift of Hodgen Estate, 1952; purchased from Frank Partridge', '2011-05-05 03:42:43', NULL, 'Painting', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (8.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Leighton, Clare', 'Corsican Washerwomen', '2011-05-05 03:42:43', 'AI_70189.jpg', 'Leighton, Clare Corsican Washerwomen Graphic Arts, wood engraving 55/215 c.1936', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Tisch Library, 35 Professors Row')
+  [1m[36mSQL (10.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Marsh, Reginald', 'Switch Engines, Erie Yards, Jersey City', '2011-05-05 03:42:43', 'AI_70198.jpg', 'Marsh, Reginald Switch Engines, Erie Yards, Jersey City Graphic Arts, lithograph 1947', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (27.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Sommer, William', 'The Sunday Boy', '2011-05-05 03:42:43', 'AI_70239.jpg', 'Sommer, William The Sunday Boy Graphic Arts, lithograph', NULL, '2011-05-05 03:42:43', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (36.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Smillie, James David', 'Rough Sport in the Yosemite ( a Fragment)', '2011-05-05 03:42:44', 'AI_70252.jpg', 'Smillie, James David Rough Sport in the Yosemite ( a Fragment) Graphic Arts, engraving 11/1885', NULL, '2011-05-05 03:42:44', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (10.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Millet, Jean Francois', 'Les Becheurs', '2011-05-05 03:42:44', 'AI_70253.jpg', 'Millet, Jean Francois Les Becheurs Graphic Arts, etching', NULL, '2011-05-05 03:42:44', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (27.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Hunt, William Morris', 'Untitled', '2011-05-05 03:42:44', 'AI_70254.jpg', 'Hunt, William Morris Untitled Graphic Arts, lithograph', NULL, '2011-05-05 03:42:44', NULL, 'Print', 'Medford, Aidekman Art Center, 15 South Campus Rd.')[0m
+  [1m[35mSQL (26.9ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `artworks` (`creator`, `title`, `created_at`, `filename`, `description`, `recfrom`, `updated_at`, `date`, `object`, `location`) VALUES ('Canedo', 'Untitled (Nude Woman)', '2011-05-05 03:42:44', 'AI_70255.jpg', 'Canedo Untitled (Nude Woman) Graphic Arts, terracotta conte on paper', 'Mr. Lawrence Schumann', '2011-05-05 03:42:44', NULL, 'Drawing', 'Medford, Aidekman Art Center, 15 South Campus Rd.')
+  [1m[36mSQL (13.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 23:43:11 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Wed May 04 23:43:15 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (52.6ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+Rendered artworks/index.html.erb within layouts/application (732.3ms)
+Completed 200 OK in 923ms (Views: 792.1ms | ActiveRecord: 52.6ms)
+
+
+Started GET "/home/index?mobile=1" for 127.0.0.1 at Wed May 04 23:43:21 -0400 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"1"}
+Rendered home/index.mobile.erb within layouts/application (22.3ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Wed May 04 23:43:25 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[35mArtwork Load (2.0ms)[0m  SELECT `artworks`.* FROM `artworks` ORDER BY title ASC
+  [1m[36mArtwork Load (5.1ms)[0m  [1mSELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC[0m
+  [1m[35mArtwork Load (5.1ms)[0m  SELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC
+  [1m[36mArtwork Load (2.6ms)[0m  [1mSELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC[0m
+Rendered artworks/index.mobile.erb within layouts/application (395.6ms)
+Completed 200 OK in 480ms (Views: 425.9ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/artworks/view_cat/category=creator&value=Alacy,%20Wendell" for 127.0.0.1 at Wed May 04 23:43:32 -0400 2011
+  Processing by ArtworksController#view_cat as HTML
+  Parameters: {"category"=>"creator", "value"=>"Alacy, Wendell"}
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mArtwork Load (28.5ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`creator` = 'Alacy, Wendell' ORDER BY title ASC[0m
+Rendered artworks/view_cat.mobile.erb within layouts/application (29.9ms)
+Completed 200 OK in 176ms (Views: 67.1ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/artworks/1429" for 127.0.0.1 at Wed May 04 23:43:35 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1429"}
+  [1m[35mArtwork Load (0.7ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1429 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (18.9ms)
+Completed 200 OK in 58ms (Views: 43.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/artworks/view_cat/category=creator&value=Albers,%20Josef" for 127.0.0.1 at Wed May 04 23:43:41 -0400 2011
+  Processing by ArtworksController#view_cat as HTML
+  Parameters: {"category"=>"creator", "value"=>"Albers, Josef"}
+  [1m[36mArtwork Load (9.6ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`creator` = 'Albers, Josef' ORDER BY title ASC[0m
+Rendered artworks/view_cat.mobile.erb within layouts/application (40.9ms)
+Completed 200 OK in 75ms (Views: 46.7ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/artworks/1268" for 127.0.0.1 at Wed May 04 23:43:45 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1268"}
+  [1m[35mArtwork Load (0.8ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1268 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (20.4ms)
+Completed 200 OK in 51ms (Views: 28.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artworks/view_cat/category=creator&value=Baril,%20Tom" for 127.0.0.1 at Wed May 04 23:44:37 -0400 2011
+  Processing by ArtworksController#view_cat as HTML
+  Parameters: {"category"=>"creator", "value"=>"Baril, Tom"}
+  [1m[36mArtwork Load (1.7ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`creator` = 'Baril, Tom' ORDER BY title ASC[0m
+Rendered artworks/view_cat.mobile.erb within layouts/application (139.0ms)
+Completed 200 OK in 180ms (Views: 145.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/artworks/1407" for 127.0.0.1 at Wed May 04 23:44:39 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1407"}
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1407 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (20.8ms)
+Completed 200 OK in 44ms (Views: 27.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artworks/1408" for 127.0.0.1 at Wed May 04 23:44:41 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1408"}
+  [1m[36mArtwork Load (0.5ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1408 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (27.1ms)
+Completed 200 OK in 45ms (Views: 33.3ms | ActiveRecord: 0.5ms)
