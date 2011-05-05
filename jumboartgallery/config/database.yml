@@ -11,6 +11,6 @@ development:
   reconnect: false
   database: artgallery
   pool: 5
-  username: root
-  password: "toor"
+  username: gmaps
+  password: gmaps
 #  socket: /var/run/mysqld/mysqld.sock

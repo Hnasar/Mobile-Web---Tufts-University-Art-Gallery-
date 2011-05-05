@@ -46,6 +46,15 @@
       <%= @artwork.date %>
     </p>
 
+	<p>
+		<b>Expected here: LatLng info</b>
+		<% if @latlng.nil? %>
+		nil :(
+		<% else %>
+		<%= @latlng.name %>: (<%= @latlng.lat %>,<%= @latlng.lng %>) 
+		<% end %>
+	</p>
+
     <p>
       <b>Filename:</b>
       <%= @artwork.filename %>

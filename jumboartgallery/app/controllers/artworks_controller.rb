@@ -26,7 +26,7 @@ class ArtworksController < ApplicationController
   # GET /artworks/1.xml
   def show
     @artwork = Artwork.find(params[:id])
-
+	@latlng = getlatlng(params[:id])
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @artwork }
@@ -92,4 +92,29 @@ class ArtworksController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def getlatlng(id)
+  	@last_buildings = Array.new
+  	@artwork = Artwork.find(id)
+  	@arr_location = @artwork.location.split(", ")[1].split(" ") # [Aidekman, Art, Center]
+  	puts @arr_location
+  	if not @arr_location.nil?
+	  	@arr_location.each do |search_term|
+  			@buildings = BuildingLocation.where("name LIKE ?", "%#{search_term}%")
+  			if not @buildings.nil? and @buildings.length == 1 # There is one result.
+  				return @buildings[0]
+	  		elsif not @buildings.nil? and @buildings.length > 1 # There are multiple results.
+  				@last_buildings = @buildings
+  			elsif not @buildings.nil? and @buildings.length == 0 and @last_buildings.length > 0 #There are no new results.
+  				return @last_buildings[0]
+  			#elsif @buildings.nil?
+  				#puts "buildings is nil"
+
+  			end
+  		end
+  	end
+  	#puts "ret nil"
+  	return nil
+  end
+  
 end
