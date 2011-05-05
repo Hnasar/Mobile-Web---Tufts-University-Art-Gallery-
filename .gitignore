@@ -1,7 +1,9 @@
 .bundle
-db/*.sqlite3
-log/*.log
-tmp/**/*
+jumboartgallery/db/*
+jumboartgallery/log/*
+jumboartgallery/tmp/**/*
 .DS_Store
 database.yml
 *~
+jumboartgallery/config/database.yml
+jumboartgallery/log/development.log

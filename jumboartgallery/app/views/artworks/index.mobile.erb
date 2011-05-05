@@ -2,24 +2,44 @@
   
   <div data-role="header" data-theme="b" data-position="fixed">
       <h1>Browse By</h1>
-      <a href="#home" data-icon="home" class="ui-btn-right" data-iconpos="notext">Home</a>
+      <a href="#home" data-icon="home" data-back="true" class="ui-btn-right" data-iconpos="notext">Home</a>
   </div><!-- /header -->
   
   <div data-role="content">
     <ul data-role="listview">
       <li>Artist
         <ul data-role="listview" data-filter="true">
-          <% @artists.each do |artist| %>
+	  <% new_header = true %> 
+          <% head = '~'%>
+	  <% @artists.each do |artist| %>
             <%if artist.creator%>
-              <li><a href="/artworks/view_cat/category=creator&value=<%=artist.creator%>"><%=artist.creator%></a></li>
+	      <%if !head.eql?(artist.creator[0,1]) %>
+	        <% head = artist.creator[0,1] %>
+                <% new_header = true %>
+	      <%end%>
+	      <%if new_header %> 
+	        <%new_header = false %>
+                <li data-role="list-divider"><%=head%></li>
+	      <%end%>
+	      <li><a href="/artworks/view_cat/category=creator&value=<%=artist.creator%>"><%=artist.creator%></a></li>
             <%end%>
           <% end %>
         </ul>
       </li>
       <li>Title
         <ul data-role="listview" data-filter="true">
+	  <% new_header = true %> 
+          <% head = '~'%>
           <% @artworks.each do |artwork| %>
             <%if artwork.title%>
+	      <%if !head.eql?(artwork.title[0,1]) %>
+		<% head = artwork.title[0,1] %>
+                <% new_header = true %>
+	      <%end%>
+	      <%if new_header %> 
+	        <%new_header = false %>
+                <li data-role="list-divider"><%=head%></li>
+	      <%end%>
               <li><%= link_to artwork.title, artwork %></li>
             <%end%>
           <% end %>
@@ -57,4 +77,5 @@
   </div>  <!-- /footer -->
   
 </div><!-- /page -->
+
 
