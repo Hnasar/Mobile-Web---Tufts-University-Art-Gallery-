@@ -12,5 +12,5 @@ development:
   database: artgallery
   pool: 5
   username: root
-  password: "toor"
+  password: jeloz
 #  socket: /var/run/mysqld/mysqld.sock

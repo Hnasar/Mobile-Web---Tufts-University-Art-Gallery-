@@ -12431,3 +12431,99 @@ Started GET "/artworks/1357" for 127.0.0.1 at Thu May 05 01:59:44 -0400 2011
   [1m[36mArtwork Load (0.5ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1357 LIMIT 1[0m
 Rendered artworks/show.mobile.erb within layouts/application (19.7ms)
 Completed 200 OK in 42ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 02:12:03 -0400
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 02:12:50 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-05 12:07:38 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (17.9ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2011-05-05 12:07:39 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (125.2ms)
+Completed 200 OK in 226ms (Views: 125.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/artworks/76" for 127.0.0.1 at 2011-05-05 12:08:11 -0400
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mSQL (29.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mArtwork Load (0.2ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 76 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (8.9ms)
+Completed 200 OK in 49ms (Views: 12.2ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/" for 130.64.222.73 at 2011-05-05 12:08:50 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/info" for 127.0.0.1 at 2011-05-05 12:09:18 -0400
+
+ActionController::RoutingError (No route matches "/info"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworks" for 130.64.222.73 at 2011-05-05 12:15:23 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (128.3ms)
+Completed 200 OK in 145ms (Views: 127.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/home/index?mobile=1" for 127.0.0.1 at 2011-05-05 12:48:40 -0400
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"1"}
+Rendered home/index.mobile.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2011-05-05 12:48:40 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.9ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (124.6ms)
+Completed 200 OK in 141ms (Views: 124.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/home/index?mobile=1" for 127.0.0.1 at 2011-05-05 12:52:15 -0400
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"1"}
+Rendered home/index.mobile.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index?mobile=1" for 127.0.0.1 at 2011-05-05 12:53:09 -0400
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"1"}
+Rendered home/index.mobile.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
