@@ -22,6 +22,13 @@ class ArtworksController < ApplicationController
     end
   end
 
+  def tours
+  	@tour = Artwork.all(:limit => 5)
+  	respond_to do |format|
+  		format.html #tours.mobile.erb
+  	end
+  end
+
   # GET /artworks/1
   # GET /artworks/1.xml
   def show

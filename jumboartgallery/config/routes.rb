@@ -1,9 +1,12 @@
 Artgallery::Application.routes.draw do
+  get "tours/index"
+
   get "home/index"
 
   resources :artworks
   
   match '/artworks/view_cat/category=:category&value=:value' => 'artworks#view_cat'
+  match '/tours' => 'tours#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
