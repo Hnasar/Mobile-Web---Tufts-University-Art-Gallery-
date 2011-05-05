@@ -3,7 +3,9 @@ Artgallery::Application.routes.draw do
 
   resources :artworks
   
-  match '/artworks/view_cat/category=:category&value=:value' => 'artworks#view_cat'
+  #match '/artworks/view_cat/category=:category&value=:value' => 'artworks#view_cat'
+  match '/artworks/view_cat/category=:category&value=:value', :controller => 'artworks', :action => 'view_cat', 
+  :constraints => { :value => /.*/ }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
