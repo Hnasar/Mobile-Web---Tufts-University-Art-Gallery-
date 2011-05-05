@@ -6,3 +6,4 @@ tmp/**/*
 database.yml
 *~
 jumboartgallery/config/database.yml
+jumboartgallery/log/development.log

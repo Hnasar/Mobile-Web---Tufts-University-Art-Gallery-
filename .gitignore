@@ -1,7 +1,7 @@
 .bundle
-db/*
-log/*
-tmp/**/*
+jumboartgallery/db/*
+jumboartgallery/log/*
+jumboartgallery/tmp/**/*
 .DS_Store
 database.yml
 *~
