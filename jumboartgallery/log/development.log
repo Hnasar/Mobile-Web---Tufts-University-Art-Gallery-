@@ -12955,3 +12955,375 @@ Started GET "/artworks/7" for 166.137.139.171 at 2011-05-05 13:25:31 -0400
   [1m[35mArtwork Load (0.2ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 7 LIMIT 1
 Rendered artworks/show.mobile.erb within layouts/application (21.2ms)
 Completed 200 OK in 52ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artworks" for 166.137.139.171 at 2011-05-05 13:28:19 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (103.9ms)
+Completed 200 OK in 120ms (Views: 103.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 174.252.38.131 at 2011-05-05 13:29:34 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 174.252.38.131 at 2011-05-05 13:30:38 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.6ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (20.7ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.4ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (121.3ms)
+Completed 200 OK in 145ms (Views: 109.7ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/artworks/view_cat/category=creator&value=Alacy,%20Wendell" for 174.252.38.131 at 2011-05-05 13:32:42 -0400
+  Processing by ArtworksController#view_cat as HTML
+  Parameters: {"category"=>"creator", "value"=>"Alacy, Wendell"}
+  [1m[36mArtwork Load (0.3ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`creator` = 'Alacy, Wendell' ORDER BY title ASC[0m
+Rendered artworks/view_cat.mobile.erb within layouts/application (16.6ms)
+Completed 200 OK in 48ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artworks/192" for 174.252.38.131 at 2011-05-05 13:32:49 -0400
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"192"}
+  [1m[35mArtwork Load (0.2ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 192 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (9.5ms)
+Completed 200 OK in 20ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artworks/192info" for 174.252.38.131 at 2011-05-05 13:33:20 -0400
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"192info"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 192 LIMIT 1[0m
+Rendered artworks/show.mobile.erb within layouts/application (8.5ms)
+Completed 200 OK in 19ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artworks/192infoTours" for 174.252.38.131 at 2011-05-05 13:33:27 -0400
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"192infoTours"}
+  [1m[35mArtwork Load (0.2ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 192 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (27.9ms)
+Completed 200 OK in 38ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artworksinfo" for 174.252.38.131 at 2011-05-05 13:33:39 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksinfo" for 174.252.38.131 at 2011-05-05 13:33:44 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/info" for 174.252.38.131 at 2011-05-05 13:34:11 -0400
+
+ActionController::RoutingError (No route matches "/info"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 174.252.38.131 at 2011-05-05 13:34:25 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 174.252.38.131 at 2011-05-05 13:34:46 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (102.0ms)
+Completed 200 OK in 118ms (Views: 101.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/info" for 174.252.38.131 at 2011-05-05 13:35:18 -0400
+
+ActionController::RoutingError (No route matches "/info"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksinfo" for 130.64.222.73 at 2011-05-05 13:42:35 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksTours" for 130.64.222.73 at 2011-05-05 13:42:41 -0400
+
+ActionController::RoutingError (No route matches "/artworksTours"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksinfo" for 130.64.222.73 at 2011-05-05 13:42:43 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksinfo" for 130.64.222.73 at 2011-05-05 13:43:02 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksTours" for 130.64.222.73 at 2011-05-05 13:43:04 -0400
+
+ActionController::RoutingError (No route matches "/artworksTours"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2011-05-05 13:43:35 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (108.7ms)
+Completed 200 OK in 136ms (Views: 119.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 174.252.38.131 at 2011-05-05 13:43:36 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index?mobile=1" for 127.0.0.1 at 2011-05-05 13:43:39 -0400
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"1"}
+Rendered home/index.mobile.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2011-05-05 13:43:39 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (121.7ms)
+Completed 200 OK in 139ms (Views: 121.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/artworksinfo" for 130.64.222.73 at 2011-05-05 13:43:52 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksTours" for 127.0.0.1 at 2011-05-05 13:43:56 -0400
+
+ActionController::RoutingError (No route matches "/artworksTours"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 174.252.38.131 at 2011-05-05 13:52:37 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (8.3ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.16.189.145 at 2011-05-05 14:00:10 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (8.3ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 172.16.189.145 at 2011-05-05 14:00:23 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (130.9ms)
+Completed 200 OK in 166ms (Views: 130.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/artworks/view_cat/category=creator&value=Albers,%20Josef" for 172.16.189.145 at 2011-05-05 14:00:56 -0400
+  Processing by ArtworksController#view_cat as HTML
+  Parameters: {"category"=>"creator", "value"=>"Albers, Josef"}
+  [1m[36mArtwork Load (0.4ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`creator` = 'Albers, Josef' ORDER BY title ASC[0m
+Rendered artworks/view_cat.mobile.erb within layouts/application (10.0ms)
+Completed 200 OK in 21ms (Views: 13.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artworks/127" for 172.16.189.145 at 2011-05-05 14:01:58 -0400
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"127"}
+  [1m[35mArtwork Load (0.2ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 127 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (47.5ms)
+Completed 200 OK in 72ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/index?mobile=1" for 127.0.0.1 at 2011-05-05 14:20:41 -0400
+  Processing by HomeController#index as HTML
+  Parameters: {"mobile"=>"1"}
+Rendered home/index.mobile.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2011-05-05 14:20:42 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.6ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (118.6ms)
+Completed 200 OK in 137ms (Views: 118.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/artworksinfo" for 127.0.0.1 at 2011-05-05 14:26:29 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.6ms)
+
+
+Started GET "/artworksinfo" for 127.0.0.1 at 2011-05-05 14:26:30 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworks" for 130.64.222.73 at 2011-05-05 14:30:17 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.3ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.6ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (103.0ms)
+Completed 200 OK in 129ms (Views: 112.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/info" for 130.64.222.73 at 2011-05-05 14:34:23 -0400
+
+ActionController::RoutingError (No route matches "/info"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/info" for 130.64.222.73 at 2011-05-05 14:35:17 -0400
+
+ActionController::RoutingError (No route matches "/info"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 130.64.222.73 at 2011-05-05 14:35:58 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 130.64.222.73 at 2011-05-05 14:36:16 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (103.0ms)
+Completed 200 OK in 119ms (Views: 102.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/artworksinfo" for 130.64.222.73 at 2011-05-05 14:36:29 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksTours" for 130.64.222.73 at 2011-05-05 14:36:32 -0400
+
+ActionController::RoutingError (No route matches "/artworksTours"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/artworksinfo" for 130.64.222.73 at 2011-05-05 14:36:40 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 130.64.222.73 at 2011-05-05 14:36:57 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 130.64.222.73 at 2011-05-05 14:37:02 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (102.1ms)
+Completed 200 OK in 118ms (Views: 101.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/artworksinfo" for 130.64.222.73 at 2011-05-05 14:37:49 -0400
+
+ActionController::RoutingError (No route matches "/artworksinfo"):
+  
+
+Rendered /Users/hashem/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 130.64.222.73 at 2011-05-05 14:40:39 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 130.64.222.73 at 2011-05-05 14:40:41 -0400
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (2.1ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (2.8ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (102.0ms)
+Completed 200 OK in 118ms (Views: 101.6ms | ActiveRecord: 5.7ms)
