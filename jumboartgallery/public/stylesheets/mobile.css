@@ -1,4 +1,6 @@
 /*put specific mobile css stuff in here */
+
+/* fix for disappearing header/footer */
 .ui-page { z-index: 1}
 .ui-header { z-index: 10 }
 .ui-header * { z-index: 20 }
