@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110505171251) do
+ActiveRecord::Schema.define(:version => 20110505185246) do
 
   create_table "artworks", :force => true do |t|
     t.string   "object"
@@ -32,6 +32,22 @@ ActiveRecord::Schema.define(:version => 20110505171251) do
     t.decimal  "lng",        :precision => 10, :scale => 6
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "tour_items", :force => true do |t|
+    t.integer  "artwork_id"
+    t.integer  "tour_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tours", :force => true do |t|
+    t.text     "desc"
+    t.integer  "order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
   end
 
 end
