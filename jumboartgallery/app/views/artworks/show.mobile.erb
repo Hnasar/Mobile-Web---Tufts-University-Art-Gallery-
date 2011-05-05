@@ -1,0 +1,72 @@
+<%
+require 'aws/s3'
+
+  AWS::S3::Base.establish_connection!(
+    :access_key_id     => 'AKIAIWNUCQ3RBDHV6BYA',
+    :secret_access_key => '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'
+  ) 
+  @image_url = AWS::S3::S3Object.url_for("#{@artwork.filename}.jpg",'Art_Images')
+%>
+
+
+<div data-role="page" id="showart">
+  
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1><%=@artwork.title%></h1>
+      <a href="#home" data-icon="home" class="ui-btn-right" data-iconpos="notext">Home</a>
+  </div><!-- /header -->
+  
+  <div class="artwork-piece" data-role="content">
+    <p><img src="<%= @image_url %>" HEIGHT="300" WIDTH="300"/></p>
+    <p>
+      <b>Object:</b>
+      <a href="/artworks/view_cat/category=object&value=<%=@artwork.object%>"><%=@artwork.object%></a>
+    </p>
+
+    <p>
+      <b>Creator:</b>
+      <a href="/artworks/view_cat/category=creator&value=<%=@artwork.creator%>"><%=@artwork.creator%></a>
+    </p>
+
+    <p>
+      <b>Title:</b>
+      <%= @artwork.title %>
+    </p>
+
+    <p>
+      <b>Description:</b>
+      <%= @artwork.description %>
+    </p>
+
+    <p>
+      <b>Location:</b>
+      <a href="/artworks/view_cat/category=location&value=<%=@artwork.location%>"><%=@artwork.location%></a>
+    </p>
+
+    <p>
+      <b>Recfrom:</b>
+      <%= @artwork.recfrom %>
+    </p>
+
+    <p>
+      <b>Date:</b>
+      <%= @artwork.date %>
+    </p>
+
+    <p>
+      <b>Filename:</b>
+      <%= @artwork.filename %>
+    </p>   
+  </div><!-- /content -->
+  
+  <div data-role="footer" data-theme="b" data-position="fixed">
+  		<div data-role="navbar">
+  			<ul>
+  				<li><%= link_to "Art", artworks_path, "data-icon" => "grid"  %></li>
+  				<li><a href="info" data-icon="info">Info</a></li>
+  				<li><a href="Tours" data-icon="star">Tours</a></li>
+  			</ul>
+ 		</div>
+  </div> <!-- /footer -->
+   
+</div><!-- /page -->

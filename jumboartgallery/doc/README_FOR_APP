@@ -1,0 +1,34 @@
+Art Gallery Rails Skeleton Setup
+---------------------------------------
+
+After pulling skeleton from repository:
+
+1. Type "ruby -v" to ensure you have a working version of ruby in your path.  Ideally, you should have >= 1.8.7.
+
+2. Type "sudo gem install rails" - This will install the latest version of rails.
+
+Navigate to the root of the Art Gallery project and
+1. Create a mysql database for the art gallery:
+       Default database name is artgallery but all DB configurations can be changed in config/database.yml.
+       Be sure to create a user that has access to the database and has the correct priviliges.
+       You may need to change/delete the socket line if your mysql uses a different socket.  To determine your socket, type "mysql_config --socket"
+
+2. Type "bundle install" - This will install and "use" all the gems listed in the Gemfile.
+
+3. At the root of the rails project, type "rake db:migrate" in cmd to initialize the DB with correct tables. 
+    If there are currently tables in the database, use "rake db:migrate:reset"
+
+4. Then type "rake db:seed"
+    This will populate the data with the information from the CSV at lib/Art Collection.csv
+
+All bootstrapping should now be done.  If you have problems:
+
+1. Depending on your system configuration, you may need to change the "adapater" to mysql and not mysql2. Use whichever one works for you.
+
+2. Make sure that the database.yml file in the config folder matches your mysql settings.
+    NOTE: Rails will use the settings under "development: "
+
+3. Make sure the database is setup correctly in your local mysql.  To test, try logging in to mysql as the user you specify in the database.yml and try to access the DB.
+
+4. If you get an error when you attempt to rake db:migrate or rake db:seed, do rake db:migrate:reset and then try rake db:seed.
+
