@@ -12,9 +12,16 @@ require 'csv'
 
 
 t = Tour.create(:name => "Sample Tour")
-t.tour_items.create(:artwork => Artwork.find(3491))
-t.tour_items.create(:artwork => Artwork.find(3499))
-t.tour_items.create(:artwork => Artwork.find(3525))
-#t.tour_items.create(:artwork => Artwork.where(:title => 'Greek Lekythos').id)
-#t.tour_items.create(:artwork => Artwork.where(:title => 'Shoe Shine Sign in Southern Town').id)
+t.tour_items.create(:artwork => Artwork.find(515))
+t.tour_items.create(:artwork => Artwork.find(593))
+t.tour_items.create(:artwork => Artwork.find(527))
+t.tour_items.create(:artwork => Artwork.find(533))
+t.tour_items.create(:artwork => Artwork.find(545))
+
+t = Tour.create(:name => "The cool tour", :desc => "Purely awesome tour")
+t.tour_items.create(:artwork => Artwork.find(516))
+t.tour_items.create(:artwork => Artwork.find(590))
+t.tour_items.create(:artwork => Artwork.find(585))
+t.tour_items.create(:artwork => Artwork.find(560))
+t.tour_items.create(:artwork => Artwork.find(550))
 
