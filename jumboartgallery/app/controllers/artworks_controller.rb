@@ -21,14 +21,12 @@ class ArtworksController < ApplicationController
       format.html # view_cat.html.erb
     end
   end
-
-  def tours
-  	@tour = Artwork.all(:limit => 5)
-  	respond_to do |format|
-  		format.html #tours.mobile.erb
-  	end
-  end
-
+	
+  def get_art_latlng
+ 	 @latlng = getlatlng(params[:id])
+ 	 render :json => @latlng
+  end	
+	
   # GET /artworks/1
   # GET /artworks/1.xml
   def show
@@ -37,6 +35,7 @@ class ArtworksController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @artwork }
+      format.json { render :json => @latlng }
     end
   end
 
@@ -101,6 +100,7 @@ class ArtworksController < ApplicationController
   end
   
   def getlatlng(id)
+
   	@last_buildings = Array.new
   	@artwork = Artwork.find(id)
   	@arr_location = @artwork.location.split(", ")[1].split(" ") # [Aidekman, Art, Center]

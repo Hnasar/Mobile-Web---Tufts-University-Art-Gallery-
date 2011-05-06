@@ -11,6 +11,14 @@ class ToursController < ApplicationController
   # GET /tours/1.xml
   def show
     @tour = Tour.find(params[:id])
+    respond_to do |format|
+    	format.html #show.mobile.erb
+    end
+  end
+  
+  def tour_items
+  	@tour = Tour.find(params[:id])
+  	render :json => @tour.artwork
   end
 
 end

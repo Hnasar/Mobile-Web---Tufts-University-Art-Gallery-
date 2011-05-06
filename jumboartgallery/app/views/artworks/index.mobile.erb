@@ -70,8 +70,8 @@
   		<div data-role="navbar">
   			<ul>
   				<li><%= link_to "Art", artworks_path, "data-icon" => "grid"  %></li>
-  				<li><a href="/info" data-icon="info">Info</a></li>
-  				<li><a href="/tours" data-icon="star">Tours</a></li>
+  				<li><%= link_to "Home", {:controller => "home", :action => "index"}, "data-icon" => "home" %></li>
+  				<li><%= link_to "Tours", tours_path, "data-icon" => "star" %></li>
   			</ul>
  		</div>
   </div>  <!-- /footer -->

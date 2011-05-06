@@ -1,3 +1,4 @@
+
 <div data-role="page" id="home">
   
   <div data-role="header" data-theme="b" data-backbtn="false" data-position="fixed">
@@ -6,12 +7,20 @@
   
   <div data-role="content">
   	
+  	<div id="img_rotator" style="text-align:center;">
+  		<% @random_art.each do |art| %>
+  		<a href="<%= url_for(art) %>"> 
+  			<img src="http://s3.amazonaws.com/Art_Images/<%= art.filename %>.jpg" HEIGHT="200" WIDTH="200"/>
+  			<p><%= art.title %></p>
+  		</a>
+  		<% end %> 		
+  	</div><!-- /img rotator -->
+  	
     <ul data-role="listview" data-inset="true">
-      <li><%= link_to "Artworks", artworks_path %></li>
-      <li>Exhibits</li>
-      <li>Guided Tours</li>
-      <li>Podcasts</li>
-      <li>About</li>
+      <li><%= link_to content_tag(:h1, "Art Collection") + content_tag(:p, "Checkout the Tufts University Art Collection!"), artworks_path %><p></p></li>
+      <li><h1>Exhibits</h1><p>Browse our Exhibits</p></li>
+      <li><h1>Information</h1><p>Hours, contact info, and more information regarding the Tufts Art Gallery</p></li>
+      <li><%= link_to content_tag(:h1, "Tours") + content_tag(:p, "Browse our virtual Mobile Tours!"), tours_path %></li>
     </ul>
   </div><!-- /content -->
   
@@ -20,9 +29,10 @@
   			<ul>
   				<li><%= link_to "Art", artworks_path, "data-icon" => "grid" %></li>
   				<li><a href="/info" data-icon="info">Info</a></li>
-  				<li><a href="/tours" data-icon="star">Tours</a></li>
+  				<li><%= link_to "Tours", tours_path, "data-icon" => "star" %></li>
   			</ul>
  		</div>
   </div><!-- /footer -->
   
 </div><!-- /page -->
+
