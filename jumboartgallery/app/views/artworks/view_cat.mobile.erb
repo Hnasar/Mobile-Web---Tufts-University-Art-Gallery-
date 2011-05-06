@@ -6,7 +6,7 @@
   </div><!-- /header -->
   
   <div data-role="content">    
-    <ul data-role="listview" data-filter="true" data-position="fixed">
+    <ul data-role="listview" data-filter="false" data-position="fixed">
       <% @artworks_by_cat.each do |artwork| %>
         <li><%= link_to artwork.title, artwork %></li>
       <% end %>
