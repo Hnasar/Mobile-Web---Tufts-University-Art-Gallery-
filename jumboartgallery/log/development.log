@@ -12431,3 +12431,60 @@ Started GET "/artworks/1357" for 127.0.0.1 at Thu May 05 01:59:44 -0400 2011
   [1m[36mArtwork Load (0.5ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1357 LIMIT 1[0m
 Rendered artworks/show.mobile.erb within layouts/application (19.7ms)
 Completed 200 OK in 42ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 02:03:33 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.mobile.erb within layouts/application (5.3ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artworks" for 127.0.0.1 at Thu May 05 02:03:43 -0400 2011
+  Processing by ArtworksController#index as HTML
+  [1m[36mArtwork Load (1.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` ORDER BY title ASC[0m
+  [1m[35mArtwork Load (0.5ms)[0m  SELECT DISTINCT(creator) FROM `artworks` ORDER BY creator ASC
+  [1m[36mArtwork Load (3.4ms)[0m  [1mSELECT DISTINCT(location) FROM `artworks` ORDER BY location ASC[0m
+  [1m[35mArtwork Load (0.3ms)[0m  SELECT DISTINCT(object) FROM `artworks` ORDER BY object ASC
+Rendered artworks/index.mobile.erb within layouts/application (347.3ms)
+Completed 200 OK in 570ms (Views: 357.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/artworks/1240" for 127.0.0.1 at Thu May 05 02:04:12 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1240"}
+  [1m[36mSQL (91.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mArtwork Load (0.8ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1240 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (25.9ms)
+Completed 200 OK in 140ms (Views: 33.1ms | ActiveRecord: 92.8ms)
+
+
+Started GET "/artworks/view_cat/category=location&value=Boston,%20Medical%20School,%2075%20Kneeland%20St.,%209th%20Floor" for 127.0.0.1 at Thu May 05 02:04:21 -0400 2011
+  Processing by ArtworksController#view_cat as HTML
+  Parameters: {"category"=>"location", "value"=>"Boston, Medical School, 75 Kneeland St., 9th Floor"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`location` = 'Boston, Medical School, 75 Kneeland St., 9th Floor' ORDER BY title ASC[0m
+Rendered artworks/view_cat.mobile.erb within layouts/application (52.4ms)
+Completed 200 OK in 232ms (Views: 74.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artworks/1251" for 127.0.0.1 at Thu May 05 02:04:23 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1251"}
+  [1m[35mArtwork Load (0.6ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1251 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (28.2ms)
+Completed 200 OK in 76ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artworks/view_cat/category=location&value=Medford,%20Cohen%20Auditorium,%2015%20South%20Campus%20Rd." for 127.0.0.1 at Thu May 05 02:25:23 -0400 2011
+  Processing by ArtworksController#view_cat as HTML
+  Parameters: {"category"=>"location", "value"=>"Medford, Cohen Auditorium, 15 South Campus Rd."}
+  [1m[36mArtwork Load (4.4ms)[0m  [1mSELECT `artworks`.* FROM `artworks` WHERE `artworks`.`location` = 'Medford, Cohen Auditorium, 15 South Campus Rd.' ORDER BY title ASC[0m
+Rendered artworks/view_cat.mobile.erb within layouts/application (72.0ms)
+Completed 200 OK in 131ms (Views: 85.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/artworks/1339" for 127.0.0.1 at Thu May 05 02:25:25 -0400 2011
+  Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1339"}
+  [1m[35mArtwork Load (3.9ms)[0m  SELECT `artworks`.* FROM `artworks` WHERE `artworks`.`id` = 1339 LIMIT 1
+Rendered artworks/show.mobile.erb within layouts/application (30.8ms)
+Completed 200 OK in 54ms (Views: 37.3ms | ActiveRecord: 3.9ms)
