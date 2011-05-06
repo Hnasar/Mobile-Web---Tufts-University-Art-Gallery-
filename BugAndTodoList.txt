@@ -1,21 +1,32 @@
 Unfixable bugs
--Filtering large list of artwork freezes phones....remedied by removeing filter from large list
+-Filtering large list of artwork freezes phones
+  ~remedied by removeing filter from large list
+  ~references a jquery function, and we can't add custom functions without directly modifying the jquery mobile code
+-Home button doesn't appear in the title bar under Browse By > Artist (or any of the other options)
+  ~The way we have nested listviews means that we can't manually add things to the header
+
 
 Not fixed bugs
 -When going Browse By > Artist > Artist's Work > SOME_ARTWORK, then clicking back makes the back button 
 disappear from the artist's work page.
--Home button doesn't appear in the title bar under Browse By > Artist (or any of the other options)
 -Footer toolbar doesn't appear under Browse By > Artist (or any of the other options)
 -Refreshing a page that is not the home page removes the back button
 -Home page title image gets cut off when in portrait
+-Footer/Header stay in-view in some pages but not others (does not stay in-view on an artwork page)
+
 
 Still Todo
--Have mini static google map image under each Artwork, or a link to an actual map with the artwork
--Make it so clicking on a footer toolbar item doesn't slide to animate
 -Create Info page on the footer toolbar
 -Create About page on home page
 -Create Exhibits page on the home page
 -Link Guided Tours to the same place as the footer toolbar tours button
 -Remove Podcasts link from homepage (or link it to some podcasts page)
--Have image-slideshow on the home page (right now it's kind of boring)
 -Finish loading actual tour info from a database
+
+
+Nice To Have
+-Make it so clicking on a footer toolbar item doesn't slide to animate
+-Have mini static google map image under each Artwork, or a link to an actual map with the artwork
+-Have image-slideshow on the home page
+-Center image of artwork and add a dropshadow (perhaps both can be done w/ css3?)
+-Place information on artwork in a sort of white box to stand out from the gray background
