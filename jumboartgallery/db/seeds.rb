@@ -12,9 +12,9 @@ require 'csv'
 
 
 t = Tour.create(:name => "Sample Tour")
-t.tour_items.create(:artwork => Artwork.find(3491))
-t.tour_items.create(:artwork => Artwork.find(3499))
-t.tour_items.create(:artwork => Artwork.find(3525))
+#t.tour_items.create(:artwork => Artwork.find(3491))
+#t.tour_items.create(:artwork => Artwork.find(3499))
+#t.tour_items.create(:artwork => Artwork.find(3525))
 #t.tour_items.create(:artwork => Artwork.where(:title => 'Greek Lekythos').id)
 #t.tour_items.create(:artwork => Artwork.where(:title => 'Shoe Shine Sign in Southern Town').id)
 
