@@ -10,7 +10,7 @@ Artgallery::Application.routes.draw do
   match '/artworks/getlatlng/:id' => 'artworks#get_art_latlng'
   match '/tours' => 'tours#index'
   match '/tour_items/:id' => 'tours#tour_items'
-
+  match 'home' => redirect('/')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

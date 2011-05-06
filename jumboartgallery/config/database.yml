@@ -12,5 +12,10 @@ development:
   database: artgallery
   pool: 5
   username: root
+<<<<<<< HEAD
   password: rafiroot
   host: localhost
+=======
+  password: jeloz
+#  socket: /var/run/mysqld/mysqld.sock
+>>>>>>> origin/master

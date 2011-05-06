@@ -2,14 +2,14 @@
   
   <div data-role="header" data-theme="b" data-position="fixed">
       <h1>Browse By</h1>
-      <a href="#home" data-icon="home" data-back="true" class="ui-btn-right" data-iconpos="notext">Home</a>
+      <a href="/" data-icon="home" data-back="true" class="ui-btn-right" data-iconpos="notext">Home</a>
   </div><!-- /header -->
   
   <div data-role="content">
     <ul data-role="listview">
       <li>Artist
-        <ul data-role="listview" data-filter="true">
-	  <% new_header = true %> 
+    	<ul data-role="listview" data-filter="false">
+	  <% new_header = true %>
           <% head = '~'%>
 	  <% @artists.each do |artist| %>
             <%if artist.creator%>
@@ -27,7 +27,7 @@
         </ul>
       </li>
       <li>Title
-        <ul data-role="listview" data-filter="true">
+        <ul data-role="listview" data-filter="false">
 	  <% new_header = true %> 
           <% head = '~'%>
           <% @artworks.each do |artwork| %>
@@ -46,7 +46,7 @@
         </ul>
       </li>       
       <li>Location
-        <ul data-role="listview" data-filter="true">
+        <ul data-role="listview" data-filter="false">
           <% @locations.each do |location| %>
             <%if location.location%>
               <li><a href="/artworks/view_cat/category=location&value=<%=location.location%>"><%=location.location%></a></li>
@@ -55,7 +55,7 @@
         </ul>
       </li>
       <li>Type
-        <ul data-role="listview" data-filter="true">
+        <ul data-role="listview" data-filter="false">
           <% @types.each do |type| %>
             <%if type.object%>
               <li><a href="/artworks/view_cat/category=object&value=<%=type.object%>"><%=type.object%></a></li>
