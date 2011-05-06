@@ -2,7 +2,7 @@
   
   <div data-role="header" data-theme="b" data-position="fixed">
       <h1>Browse By</h1>
-      <a href="#home" data-icon="home" class="ui-btn-right" data-iconpos="notext">Home</a>
+      <a href="#home" data-icon="home" data-back="true" class="ui-btn-right" data-iconpos="notext">Home</a>
   </div><!-- /header -->
   
   <div data-role="content">
@@ -70,8 +70,8 @@
   		<div data-role="navbar">
   			<ul>
   				<li><%= link_to "Art", artworks_path, "data-icon" => "grid"  %></li>
-  				<li><a href="info" data-icon="info">Info</a></li>
-  				<li><a href="Tours" data-icon="star">Tours</a></li>
+  				<li><a href="/info" data-icon="info">Info</a></li>
+  				<li><a href="/tours" data-icon="star">Tours</a></li>
   			</ul>
  		</div>
   </div>  <!-- /footer -->
