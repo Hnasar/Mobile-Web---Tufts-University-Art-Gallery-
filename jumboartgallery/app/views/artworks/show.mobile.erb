@@ -46,6 +46,15 @@
       <%= @artwork.date %>
     </p>
 
+	<p>
+		<b>Expected here: LatLng info</b>
+		<% if @latlng.nil? %>
+		nil :(
+		<% else %>
+		<%= @latlng.name %>: (<%= @latlng.lat %>,<%= @latlng.lng %>) 
+		<% end %>
+	</p>
+
     <p>
       <b>Filename:</b>
       <%= @artwork.filename %>
@@ -56,8 +65,8 @@
   		<div data-role="navbar">
   			<ul>
   				<li><%= link_to "Art", artworks_path, "data-icon" => "grid"  %></li>
-  				<li><a href="info" data-icon="info">Info</a></li>
-  				<li><a href="Tours" data-icon="star">Tours</a></li>
+  				<li><a href="/info" data-icon="info">Info</a></li>
+  				<li><a href="/tours" data-icon="star">Tours</a></li>
   			</ul>
  		</div>
   </div> <!-- /footer -->

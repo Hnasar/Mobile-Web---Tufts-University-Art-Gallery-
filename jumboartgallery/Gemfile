@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 group :development do
-  gem 'sqlite3'
+  gem 'mysql2'
 end
 
 group :production do
@@ -11,6 +11,7 @@ end
 gem 'rails', '3.0.4'
 gem 'jquery-rails'
 gem 'aws-s3'
+gem 'mysql2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
