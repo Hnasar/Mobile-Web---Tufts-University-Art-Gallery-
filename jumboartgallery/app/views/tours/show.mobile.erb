@@ -11,13 +11,18 @@ var tour_id = <%= @tour.id %>;
 	<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;" style="height:100%;">
 		<div id="map_canvas" style="height:300px;"></div>
 	</div>
-	
-	<div data-role="collapsible">
+	<div id="start-button">
+		<button id="start-tour" type="button" data-role="button">Start Tour</button>
+	</div>
+	<div id="tour-controls" data-inline="true" style="display:none;">
+		<button id="next" type="button" data-role="button" data-icon="arrow-r">Next</button>
+	</div>
+	<div id="tour_info">
 		<h1><%= @tour.name %></h1>
 		<p><%= @tour.desc %></p>
-		<ul data-role="listview" data-inset="true">
+		<ul id="tour_items" data-role="listview" data-inset="true">
 		<% @tour.artwork.each do |art| %>
-			<li><%= link_to art.title, {}, :id => art.id, :class => "tour-item"  %></li>
+			<li><%= link_to art.title, art, :id => art.id, :class => "tour-item"  %></li>
 		<% end %>
 		</ul>
 	</div> <! -- /collapsible -->

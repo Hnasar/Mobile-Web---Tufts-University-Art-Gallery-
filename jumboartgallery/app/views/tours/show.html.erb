@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Displaying Tour: "<%= @tour.name %>"</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Creator</th>
+    <th>Location</th>
+	<th>Photo</th>
+  </tr>
+
+
+<% @tour.artwork.each do |art| %>
+  <tr class="item" title="<%= art.description %>">
+    <td><%= art.title %></td>
+    <td><%= art.creator %></td>
+    <td><%= art.location %></td>
+	<td>
+		<img src="http://s3.amazonaws.com/Art_Images/<% art.filename %>" />
+	</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tour', new_tour_path %>
+<style type="text/css">
+  div#navbar a:nth-child(4){
+    background-color:#CEF6F5;
+}
+</style>
+
+
+<%= link_to 'Edit', edit_tour_path(@tour) %> |
+<%= link_to 'Back', tours_path %>
+<style type="text/css">
+  div#navbar a:nth-child(5){
+    background-color:#CEF6F5;
+}
+</style>

@@ -1,104 +1,52 @@
 /* global google map variables */
 
-$('#tours').live("pageshow", function() {
-	
-var tufts_latlng = new google.maps.LatLng(42.405547, -71.120259);
-	
-$('#map_canvas').gmap( { 
-	'center': tufts_latlng,
-	'zoom': 17, 
-	'callback': 
-	function (map) {
-		if ( navigator.geolocation ) {
-			watch = navigator.geolocation.watchPosition ( 
-				function( position ) { 
-					$('#map_canvas').gmap('clearMarkers');
-					$('#map_canvas').gmap('addMarker', 
-						{ 
-						'title': 'You are here!', 
-						'bound': true, 
-						'position':new google.maps.LatLng(position.coords.latitude, position.coords.longitude) 
-						}, 
-						function(map, marker) {
-							$('#map_canvas').gmap('addInfoWindow', 
-								{ 
-								'position': marker.getPosition(), 
-								'content': 'You are here!' 
-								}, 
-								function(iw) {
-									$(marker).click(function() {
-										iw.open(map, marker);
-									});
-								});
+  $(function() {
+  		var art_piece = 0;
+  		var tour_items = $('#tour_items').find('a');
+  		var tufts_latlng = new google.maps.LatLng(42.405547, -71.120259);
+
+        $('#map_canvas').gmap({'center': tufts_latlng, 'zoom': 16});
+        
+        function set_marker(id, title){
+			$.post(  
+				'/artworks/getlatlng/'+id,
+				function(data){
+					/*latlng object */
+					art_latlng = new google.maps.LatLng(data['building_location']['lat'], data['building_location']['lng'])
+				
+					/* Create the marker */
+					$('#map_canvas').gmap('addMarker', {'ARTWORK_ID' : id, 'position': art_latlng, 'title': title}, function(map, marker){
+				
+						/* Add the pop-up window */ 
+						$('#map_canvas').gmap(
+							'addInfoWindow', 
+							{'position': art_latlng, 'content': '<p><b>' + title + '</b></p>'+'<p>Located at ' + data['building_location']['name'] + '</p>' }, 
+							function(iw) {
+								iw.open(map, marker);
+								map.panTo(marker.getPosition());
+							});
 					});
-					
-					
-					/** Add the markers for each art piece **/
-					$.ajax({
-					  type: 'POST',
-					  url: '/tour_items/'+tour_id,
-					  success: function(data){
-					  				/* title of each art piece */
-					  				var title;
-									
-									for(var i = 0; i  < data.length; i++){
-										title = data[i].artwork.title;
-										$.post(
-											'/artworks/getlatlng/'+data[i].artwork.id,
-											function(latlng_data){
-														if(latlng_data){
-														$('#map_canvas').gmap('addMarker', 
-														{ 
-														'title': title, 
-														'bound': true, 
-														'position':new google.maps.LatLng(latlng_data['building_location']['lat'], latlng_data['building_location']['lng']) 
-														}, 
-														function(map, marker) {
-															$('#map_canvas').gmap('addInfoWindow', 
-																{ 
-																'position': marker.getPosition(), 
-																'content': title
-																}, 
-																function(iw) {
-																	$(marker).click(function() {
-																		iw.open(map, marker);
-																	});
-																});
-														});
-														}/* end if latlng_data */
-																						
-											} /* end success() function */
-										); /* end nested-ajax */
-									} /* end for-loop */
-								},
-					  dataType: 'json'
-					});
-					
 				}
-			);
-		}
-	}
-}); 
-	
-function getLatLng() {
-	if ( google.loader.ClientLocation != null ) {
-		return new google.maps.LatLng(google.loader.ClientLocation.latitude, google.loader.ClientLocation.longitude);	
-	}
-	return new google.maps.LatLng(59.3426606750, 18.0736160278);
-}
-
-});
-
-$('#tours').live("pagehide", function() {
-	if ( navigator.geolocation ) {
-		navigator.geolocation.clearWatch(watch);
-    }
-});
-
-$('#tours').live("pagecreate", function() {
-	var watch;
-});
-
-
+			); /* end post */
+        } /* End set_marker function */
+        
+        $('#start-tour').click(function(){
+        	if(art_piece==0){
+        		set_marker(tour_items[art_piece].id, $('#'+tour_items[art_piece].id).text());
+        		$('#start-button').hide();
+        		$('#tour-controls').show();
+        	}
+        });
+        
+        $('#next').click(function(){
+        	art_piece++;
+        	if(art_piece<tour_items.length){
+        		set_marker(tour_items[art_piece].id, $('#'+tour_items[art_piece].id).text());
+        	}else{
+        		$('#tour-controls').replaceWith('<h1>Tour Complete!</h1>');
+        	}
+        });     
+        
+    });
 
 
