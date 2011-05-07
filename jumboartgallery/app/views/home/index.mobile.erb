@@ -10,7 +10,7 @@
   	<div id="img_rotator" style="text-align:center;">
   		<% @random_art.each do |art| %>
   		<a href="<%= url_for(art) %>"> 
-  			<img src="http://s3.amazonaws.com/Art_Images/<%= art.filename %>.jpg" HEIGHT="200" WIDTH="200"/>
+  			<img src="http://s3.amazonaws.com/Art_Images/<%= art.filename %>" HEIGHT="200" WIDTH="200"/>
   			<p><%= art.title %></p>
   		</a>
   		<% end %> 		
