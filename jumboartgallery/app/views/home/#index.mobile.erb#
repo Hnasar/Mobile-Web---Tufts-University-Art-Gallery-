@@ -1,0 +1,38 @@
+
+<div data-role="page" id="home">
+  
+  <div data-role="header" data-theme="b" data-backbtn="false" data-position="fixed">
+    <h1><%= image_tag "tuagbanner.jpg" %></h1>
+  </div><!-- /header -->
+  
+  <div data-role="content">
+  	
+  	<div id="img_rotator" style="text-align:center;">
+  		<% @random_art.each do |art| %>
+  		<a href="<%= url_for(art) %>"> 
+  			<img src="http://s3.amazonaws.com/Art_Images/<%= art.filename %>.jpg" HEIGHT="200" WIDTH="200"/>
+  			<p><%= art.title %></p>
+  		</a>
+  		<% end %> 		
+  	</div><!-- /img rotator -->
+  	
+    <ul data-role="listview" data-inset="true">
+      <li><%= link_to content_tag(:h1, "Art Collection") + content_tag(:p, "Checkout the Tufts University Art Collection!"), artworks_path %><p></p></li>
+      <li><%= link_to content_tag(:h1, "Exhibits") + content_tag(:p, "Browse our Exhibits"), exhibits_path %><p></p></li>
+He's looking at https://github.com/almartin/120SpringTrunk/commits/master/app/controllers/collections_controller.rb__      <li><h1>Information</h1><p>Hours, contact info, and more information regarding the Tufts Art Gallery</p></li>
+      <li><%= link_to content_tag(:h1, "Tours") + content_tag(:p, "Browse our virtual Mobile Tours!"), tours_path %></li>
+    </ul>
+  </div><!-- /content -->
+  
+    <div data-role="footer" data-theme="b" data-position="fixed">
+  		<div data-role="navbar">
+  			<ul>
+  				<li><%= link_to "Art", artworks_path, "data-icon" => "grid" %></li>
+  				<li><a href="/info" data-icon="info">Info</a></li>
+  				<li><%= link_to "Tours", tours_path, "data-icon" => "star" %></li>
+  			</ul>
+ 		</div>
+  </div><!-- /footer -->
+  
+</div><!-- /page -->
+
