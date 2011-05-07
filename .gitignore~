@@ -1,9 +1,0 @@
-.bundle
-db/*
-log/*
-tmp/**/*
-.DS_Store
-database.yml
-*~
-jumboartgallery/config/database.yml
-jumboartgallery/log/development.log

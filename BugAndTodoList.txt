@@ -4,6 +4,7 @@ Unfixable bugs
   ~references a jquery function, and we can't add custom functions without directly modifying the jquery mobile code
 -Home button doesn't appear in the title bar under Browse By > Artist (or any of the other options)
   ~The way we have nested listviews means that we can't manually add things to the header
+-Have image-slideshow on the home page (/#/ ajax loading doesn't update javascript code)
 
 
 Not fixed bugs
@@ -24,6 +25,5 @@ Still Todo
 Nice To Have
 -Make it so clicking on a footer toolbar item doesn't slide to animate
 -Have mini static google map image under each Artwork, or a link to an actual map with the artwork
--Have image-slideshow on the home page
 -Center image of artwork and add a dropshadow (perhaps both can be done w/ css3?)
 -Place information on artwork in a sort of white box to stand out from the gray background
