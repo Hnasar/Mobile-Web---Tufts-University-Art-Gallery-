@@ -1,4 +1,4 @@
-1304710980
+1304789120
 AddTourName	/home/ubuntu/jag/jumboartgallery/db/migrate/20110505185155_add_tour_name.rb	class AddTourName 
 Application	/home/ubuntu/jag/jumboartgallery/config/application.rb	  class Application 
 ApplicationController	/home/ubuntu/jag/jumboartgallery/app/controllers/application_controller.rb	class ApplicationController 
@@ -66,7 +66,9 @@ getAll	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function ge
 getLatLng	/home/ubuntu/jag/jumboartgallery/public/javascripts/tours.mobile.js	function getLatLng()
 getWH	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function getWH( elem, name, extra )
 getWindow	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function getWindow( elem )
+get_art_latlng	/home/ubuntu/jag/jumboartgallery/app/controllers/artworks_controller.rb	  def get_art_latlng
 getlatlng	/home/ubuntu/jag/jumboartgallery/app/controllers/artworks_controller.rb	  def getlatlng(id)
+go	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.cycle.lite.1.1.min.js	function go(els,opts,manual,fwd){if(opts.busy){return ;}var p=els[0].parentNode,curr=els[opts.currSlide],next=els[opts.nextSlide];if(p.cycleTimeout===0&&!manual){return ;}if(manual||!p.cyclePause){if(opts.before.length){$.each(opts.before,function(i,o){o.apply(next,[curr,next,opts,fwd]);});}var after=function(){if($.browser.msie){this.style.removeAttribute("filter");}$.each(opts.after,function(i,o){o.apply(next,[curr,next,opts,fwd]);});};if(opts.nextSlide!=opts.currSlide){opts.busy=1;$.fn.cycle.custom(curr,next,opts,after);}var roll=(opts.nextSlide+1)==els.length;opts.nextSlide=roll?0:opts.nextSlide+1;opts.currSlide=roll?els.length-1:opts.nextSlide-1;}if(opts.timeout){p.cycleTimeout=setTimeout(function(){go(els,opts,0,!opts.rev);},opts.timeout);}}function advance(els,opts,val){var p=els[0].parentNode,timeout=p.cycleTimeout;if(timeout){clearTimeout(timeout);p.cycleTimeout=0;}opts.nextSlide=opts.currSlide+val;if(opts.nextSlide<0){opts.nextSlide=els.length-1;}else{if(opts.nextSlide>=els.length){opts.nextSlide=0;}}go(els,opts,1,val>=0);return false;}$.fn.cycle.custom=function(curr,next,opts,cb){var $l=$(curr),$n=$(next);$n.css(opts.cssBefore);var fn=function(){$n.animate(opts.animIn,opts.speedIn,opts.easeIn,cb);};$l.animate(opts.animOut,opts.speedOut,opts.easeOut,function(){$l.css(opts.cssAfter);if(!opts.sync){fn();}});if(opts.sync){fn();}};$.fn.cycle.transitions={fade:function($cont,$slides,opts){opts.cssBefore={opacity:0};opts.animOut={opacity:0};opts.animIn={opacity:1};}};$.fn.cycle.ver=function(){return ver;};$.fn.cycle.defaults={fx:"fade",timeout:4000,speed:1000,next:null,prev:null,before:null,after:null,height:"auto",sync:1,fit:0,pause:0,delay:0,slideExpr:null,cssBefore:{},cssAfter:{},animIn:{},animOut:{}};})(jQuery)
 handleMethod	/home/ubuntu/jag/jumboartgallery/public/javascripts/rails.js	function handleMethod(link)
 handleRemote	/home/ubuntu/jag/jumboartgallery/public/javascripts/rails.js	function handleRemote(element)
 handler	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function handler( donor )
@@ -92,7 +94,7 @@ show	/home/ubuntu/jag/jumboartgallery/app/controllers/tours_controller.rb	  def 
 t	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function t( gotoEnd )
 testChange	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function testChange( e )
 test_homepage	/home/ubuntu/jag/jumboartgallery/test/performance/browsing_test.rb	  def test_homepage
-tours	/home/ubuntu/jag/jumboartgallery/app/controllers/artworks_controller.rb	  def tours
+tour_items	/home/ubuntu/jag/jumboartgallery/app/controllers/tours_controller.rb	  def tour_items
 trigger	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function trigger( type, elem, args )
 up	/home/ubuntu/jag/jumboartgallery/db/migrate/20110225001412_create_artworks.rb	  def self.up
 up	/home/ubuntu/jag/jumboartgallery/db/migrate/20110505171251_create_building_locations.rb	  def self.up
