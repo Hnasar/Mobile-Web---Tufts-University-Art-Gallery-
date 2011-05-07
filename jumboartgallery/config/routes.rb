@@ -1,4 +1,6 @@
 Artgallery::Application.routes.draw do
+  resources :exhibitions
+
   get "tours/index"
   get "home/index"
 

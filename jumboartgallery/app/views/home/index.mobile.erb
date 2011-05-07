@@ -1,24 +1,33 @@
+<style type="text/css">
+.active {
+    display:inherit;
+}
 
+.inactive {
+    display:none;    
+}
+</style>
 <div data-role="page" id="home">
   
-  <div data-role="header" data-theme="b" data-backbtn="false" data-position="fixed">
+  <div data-role="header" data-theme="b" data-backbtn="false">
     <h1><%= image_tag "tuagbanner.jpg" %></h1>
   </div><!-- /header -->
   
   <div data-role="content">
-  	
   	<div id="img_rotator" style="text-align:center;">
   		<% @random_art.each do |art| %>
-  		<a href="<%= url_for(art) %>"> 
-  			<img src="http://s3.amazonaws.com/Art_Images/<%= art.filename %>" HEIGHT="200" WIDTH="200"/>
-  			<p><%= art.title %></p>
-  		</a>
+  		  <div>
+  		    <a href="<%= url_for(art) %>"> 
+      			<img src="http://s3.amazonaws.com/Art_Images/<%= art.filename %>" HEIGHT="200" WIDTH="200"/>
+      			<p><%= art.title %></p>
+  	    	</a>
+        </div>
   		<% end %> 		
   	</div><!-- /img rotator -->
   	
     <ul data-role="listview" data-inset="true">
       <li><%= link_to content_tag(:h1, "Art Collection") + content_tag(:p, "Checkout the Tufts University Art Collection!"), artworks_path %><p></p></li>
-      <li><h1>Exhibits</h1><p>Browse our Exhibits</p></li>
+      <li><%= link_to content_tag(:h1, "Exhibitions") + content_tag(:p, "Browse our Exhibitions"), exhibitions_path %><p></p></li>
       <li><h1>Information</h1><p>Hours, contact info, and more information regarding the Tufts Art Gallery</p></li>
       <li><%= link_to content_tag(:h1, "Tours") + content_tag(:p, "Browse our virtual Mobile Tours!"), tours_path %></li>
     </ul>
@@ -35,4 +44,15 @@
   </div><!-- /footer -->
   
 </div><!-- /page -->
-
+<script type="text/javascript">
+    $('#img_rotator div').addClass('inactive');
+    $('#img_rotator div:first').addClass('active').removeClass('inactive');
+  function slideSwitch() {
+    var $active = $('#img_rotator div.active');
+    if ($active.length == 0) $active = $('#img_rotator div:last');
+    var $next = $active.next().length ? $active.next() : $('#img_rotator div:first');
+    $next.addClass('active').removeClass('inactive');
+    $active.removeClass('active').addClass('inactive');
+  }
+  setInterval("slideSwitch()", 5000);
+</script>

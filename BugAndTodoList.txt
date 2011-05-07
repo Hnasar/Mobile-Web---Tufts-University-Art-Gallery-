@@ -18,9 +18,6 @@ disappear from the artist's work page.
 Still Todo
 -Create Info page on the footer toolbar
 -Create About page on home page
--Create Exhibits page on the home page
--Link Guided Tours to the same place as the footer toolbar tours button
--Remove Podcasts link from homepage (or link it to some podcasts page)
 -Finish loading actual tour info from a database
 
 

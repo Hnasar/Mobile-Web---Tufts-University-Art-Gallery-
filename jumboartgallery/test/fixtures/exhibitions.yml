@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  open: 2011-05-06
+  close: 2011-05-06
+  description: MyText
+  location: MyString
+  image1: MyString
+  image2: MyString
+  image3: MyString
+  image4: MyString
+  image5: MyString
+  opening: 2011-05-06 18:27:46
+  filename: MyString
+  opening_end: 2011-05-06 18:27:46
+
+two:
+  name: MyString
+  open: 2011-05-06
+  close: 2011-05-06
+  description: MyText
+  location: MyString
+  image1: MyString
+  image2: MyString
+  image3: MyString
+  image4: MyString
+  image5: MyString
+  opening: 2011-05-06 18:27:46
+  filename: MyString
+  opening_end: 2011-05-06 18:27:46

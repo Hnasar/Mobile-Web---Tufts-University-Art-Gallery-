@@ -1,0 +1,78 @@
+<div data-role="page" id="showexhibition">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>Exhibition Detail</h1>
+      <a href="/" data-icon="home" data-back="true" class="ui-btn-right" data-iconpos="notext">Home</a>
+  </div><!-- /header -->
+
+  <div class="exhibition" data-role="content">
+    <p>
+      <b>Name:</b>
+      <%= @exhibition.name %>
+    </p>
+    
+    <p>
+      <b>Open:</b>
+      <%= @exhibition.open %>
+    </p>
+    
+    <p>
+      <b>Close:</b>
+      <%= @exhibition.close %>
+    </p>
+    
+    <p>
+      <b>Description:</b>
+      <%= @exhibition.description %>
+    </p>
+    
+    <p>
+      <b>Location:</b>
+      <%= @exhibition.location %>
+    </p>
+    
+    <p>
+      <b>Image1:</b>
+      <%= @exhibition.image1 %>
+    </p>
+    
+    <p>
+      <b>Image2:</b>
+      <%= @exhibition.image2 %>
+    </p>
+    
+    <p>
+      <b>Image3:</b>
+      <%= @exhibition.image3 %>
+    </p>
+    
+    <p>
+      <b>Image4:</b>
+      <%= @exhibition.image4 %>
+    </p>
+    
+    <p>
+      <b>Image5:</b>
+      <%= @exhibition.image5 %>
+    </p>
+    
+    <p>
+      <b>Opening:</b>
+      <%= @exhibition.opening %>
+    </p>
+    
+    <p>
+      <b>Filename:</b>
+      <%= @exhibition.filename %>
+    </p>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-theme="b" data-position="fixed">
+                <div data-role="navbar">
+                        <ul>
+                                <li><%= link_to "Art", artworks_path, "data-icon" => "grid"  %></li>
+                                <li><%= link_to "Home", {:controller => "home", :action => "index"}, "data-icon" => "home" %></li>
+                                <li><%= link_to "Tours", tours_path, "data-icon" => "star" %></li>
+                        </ul>
+                </div>
+  </div> <!-- /footer -->
+</div><!--/page -->

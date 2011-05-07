@@ -1,0 +1,81 @@
+<div data-role="page" id="artworks">
+  
+  <div data-role="header" data-theme="b" data-position="fixed">
+      <h1>Browse By</h1>
+      <a href="/" data-icon="home" data-back="true" class="ui-btn-right" data-iconpos="notext">Home</a>
+  </div><!-- /header -->
+  
+  <div data-role="content">
+    <ul data-role="listview">
+      <li>Artist
+    	<ul data-role="listview" data-filter="false">
+	  <% new_header = true %>
+          <% head = '~'%>
+	  <% @artists.each do |artist| %>
+            <%if artist.creator%>
+	      <%if !head.eql?(artist.creator[0,1]) %>
+	        <% head = artist.creator[0,1] %>
+                <% new_header = true %>
+	      <%end%>
+	      <%if new_header %> 
+	        <%new_header = false %>
+                <li data-role="list-divider"><%=head%></li>
+	      <%end%>
+	      <li><a href="/artworks/view_cat/category=creator&value=<%=artist.creator%>"><%=artist.creator%></a></li>
+            <%end%>
+          <% end %>
+        </ul>
+      </li>
+      <li>Title
+        <ul data-role="listview" data-filter="false">
+	  <% new_header = true %> 
+          <% head = '~'%>
+          <% @artworks.each do |artwork| %>
+            <%if artwork.title%>
+	      <%if !head.eql?(artwork.title[0,1]) %>
+		<% head = artwork.title[0,1] %>
+                <% new_header = true %>
+	      <%end%>
+	      <%if new_header %> 
+	        <%new_header = false %>
+                <li data-role="list-divider"><%=head%></li>
+	      <%end%>
+              <li><%= link_to artwork.title, artwork %></li>
+            <%end%>
+          <% end %>
+        </ul>
+      </li>       
+      <li>Location
+        <ul data-role="listview" data-filter="false">
+          <% @locations.each do |location| %>
+            <%if location.location%>
+              <li><a href="/artworks/view_cat/category=location&value=<%=location.location%>"><%=location.location%></a></li>
+            <%end%>
+          <% end %>
+        </ul>
+      </li>
+      <li>Type
+        <ul data-role="listview" data-filter="false">
+          <% @types.each do |type| %>
+            <%if type.object%>
+              <li><a href="/artworks/view_cat/category=object&value=<%=type.object%>"><%=type.object%></a></li>
+            <%end%>
+          <% end %>
+        </ul>
+      </li>
+    </ul>  
+  </div><!-- /content -->  
+  
+  <div data-role="footer" data-theme="b" data-position="fixed">
+  		<div data-role="navbar">
+  			<ul>
+  				<li><%= link_to "Art", artworks_path, "data-icon" => "grid"  %></li>
+  				<li><%= link_to "Home", {:controller => "home", :action => "index"}, "data-icon" => "home" %></li>
+  				<li><%= link_to "Tours", tours_path, "data-icon" => "star" %></li>
+  			</ul>
+ 		</div>
+  </div>  <!-- /footer -->
+  
+</div><!-- /page -->
+
+
