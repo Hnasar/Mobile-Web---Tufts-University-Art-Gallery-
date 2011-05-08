@@ -1,4 +1,4 @@
-1304789120
+1304824464
 AddTourName	/home/ubuntu/jag/jumboartgallery/db/migrate/20110505185155_add_tour_name.rb	class AddTourName 
 Application	/home/ubuntu/jag/jumboartgallery/config/application.rb	  class Application 
 ApplicationController	/home/ubuntu/jag/jumboartgallery/app/controllers/application_controller.rb	class ApplicationController 
@@ -18,6 +18,12 @@ CreateArtworks	/home/ubuntu/jag/jumboartgallery/db/migrate/20110225001412_create
 CreateBuildingLocations	/home/ubuntu/jag/jumboartgallery/db/migrate/20110505171251_create_building_locations.rb	class CreateBuildingLocations 
 CreateTourItems	/home/ubuntu/jag/jumboartgallery/db/migrate/20110505185246_create_tour_items.rb	class CreateTourItems 
 CreateTours	/home/ubuntu/jag/jumboartgallery/db/migrate/20110505185103_create_tours.rb	class CreateTours 
+Exhibition	/home/ubuntu/jag/jumboartgallery/app/models/exhibition.rb	class Exhibition 
+ExhibitionTest	/home/ubuntu/jag/jumboartgallery/test/unit/exhibition_test.rb	class ExhibitionTest 
+ExhibitionsController	/home/ubuntu/jag/jumboartgallery/app/controllers/exhibitions_controller.rb	class ExhibitionsController 
+ExhibitionsControllerTest	/home/ubuntu/jag/jumboartgallery/test/functional/exhibitions_controller_test.rb	class ExhibitionsControllerTest 
+ExhibitionsHelper	/home/ubuntu/jag/jumboartgallery/app/helpers/exhibitions_helper.rb	module ExhibitionsHelper
+ExhibitionsHelperTest	/home/ubuntu/jag/jumboartgallery/test/unit/helpers/exhibitions_helper_test.rb	class ExhibitionsHelperTest 
 HomeController	/home/ubuntu/jag/jumboartgallery/app/controllers/home_controller.rb	class HomeController 
 HomeControllerTest	/home/ubuntu/jag/jumboartgallery/test/functional/home_controller_test.rb	class HomeControllerTest 
 HomeHelper	/home/ubuntu/jag/jumboartgallery/app/helpers/home_helper.rb	module HomeHelper
@@ -73,6 +79,7 @@ handleMethod	/home/ubuntu/jag/jumboartgallery/public/javascripts/rails.js	functi
 handleRemote	/home/ubuntu/jag/jumboartgallery/public/javascripts/rails.js	function handleRemote(element)
 handler	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function handler( donor )
 index	/home/ubuntu/jag/jumboartgallery/app/controllers/artworks_controller.rb	  def index
+index	/home/ubuntu/jag/jumboartgallery/app/controllers/exhibitions_controller.rb	  def index
 index	/home/ubuntu/jag/jumboartgallery/app/controllers/home_controller.rb	  def index
 index	/home/ubuntu/jag/jumboartgallery/app/controllers/tours_controller.rb	  def index
 init	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function init( selector, context )
@@ -90,6 +97,7 @@ returnFalse	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	functi
 returnTrue	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function returnTrue()
 root	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function root( elem, cur )
 show	/home/ubuntu/jag/jumboartgallery/app/controllers/artworks_controller.rb	  def show
+show	/home/ubuntu/jag/jumboartgallery/app/controllers/exhibitions_controller.rb	  def show
 show	/home/ubuntu/jag/jumboartgallery/app/controllers/tours_controller.rb	  def show
 t	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function t( gotoEnd )
 testChange	/home/ubuntu/jag/jumboartgallery/public/javascripts/jquery.js	function testChange( e )
