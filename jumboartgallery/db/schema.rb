@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110506222746) do
+ActiveRecord::Schema.define(:version => 20110505185246) do
 
   create_table "artworks", :force => true do |t|
     t.string   "object"
@@ -30,24 +30,6 @@ ActiveRecord::Schema.define(:version => 20110506222746) do
     t.string   "php_url"
     t.decimal  "lat",        :precision => 10, :scale => 6
     t.decimal  "lng",        :precision => 10, :scale => 6
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "exhibitions", :force => true do |t|
-    t.string   "name"
-    t.date     "open"
-    t.date     "close"
-    t.text     "description"
-    t.string   "location"
-    t.string   "image1"
-    t.string   "image2"
-    t.string   "image3"
-    t.string   "image4"
-    t.string   "image5"
-    t.time     "opening"
-    t.string   "filename"
-    t.time     "opening_end"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
