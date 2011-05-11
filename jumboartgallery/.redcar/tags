@@ -1,4 +1,4 @@
-1304824464
+1304740713
 AddTourName	/home/ubuntu/jag/jumboartgallery/db/migrate/20110505185155_add_tour_name.rb	class AddTourName 
 Application	/home/ubuntu/jag/jumboartgallery/config/application.rb	  class Application 
 ApplicationController	/home/ubuntu/jag/jumboartgallery/app/controllers/application_controller.rb	class ApplicationController 
